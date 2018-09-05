@@ -3,99 +3,36 @@
 <html lang="en">
 
 	<head>
-
 		<meta charset="utf-8" />
-
-		<title>jquery网格插件 - Bootstrap后台管理系统模版Ace下载</title>
-
-
-
-		 
-
+		<title>宇航论坛后台管理系统</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
 		<!-- basic styles -->
-
-
-
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
+		<!--font-awesome图标-->
 		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css">
-
-
-
+		<!--兼容IE7需引入的css，其他浏览器无法识别-->
 		<!--[if IE 7]>
-
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- page specific plugin styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.full.min.css" />
-
 		<link rel="stylesheet" href="assets/css/datepicker.css" />
-
 		<link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
-
-
-
 		<!-- fonts -->
-
-
-
-		 
-
-
-
 		<!-- ace styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
-
-
-
 		<!--[if lte IE 8]>
-
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- inline styles related to this page -->
-
-
-
 		<!-- ace settings handler -->
-
-
-
 		<script src="assets/js/ace-extra.min.js"></script>
-
-
-
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-
-
 		<!--[if lt IE 9]>
-
 		<script src="assets/js/html5shiv.js"></script>
-
 		<script src="assets/js/respond.min.js"></script>
-
 		<![endif]-->
 
 	</head>
@@ -103,11 +40,12 @@
 
 
 	<body>
-
+        <!--导航条-->
 		<div class="navbar navbar-default" id="navbar">
 
 			<script type="text/javascript">
-
+               //检查 class=navbar这个div层是不是相对窗口固定
+               //当用户拖拉切换顺序的时候，将顺序的JSON输出到顶部
 				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
 
 			</script>
@@ -124,7 +62,7 @@
 
 							<i class="icon-leaf"></i>
 
-							Ace Admin
+							宇航论坛后台管理系统
 
 						</small>
 
@@ -586,7 +524,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -600,7 +538,7 @@
 
 										<i class="icon-user"></i>
 
-										Profile
+										个人资料
 
 									</a>
 
@@ -614,11 +552,11 @@
 
 								<li>
 
-									<a href="#">
+									<a href="login.html">
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -728,6 +666,7 @@
 
 
 
+					<!--手风琴下拉菜单-->
 					<ul class="nav nav-list">
 
 						<li class="active">
@@ -736,7 +675,7 @@
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 控制台 </span>
+								<span class="menu-text"> 服务台 </span>
 
 							</a>
 
@@ -750,7 +689,7 @@
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 用户信息管理 </span>
 
 							</a>
 
@@ -764,7 +703,7 @@
 
 								<i class="icon-desktop"></i>
 
-								<span class="menu-text"> UI 组件 </span>
+								<span class="menu-text"> 帖子管理 </span>
 
 
 
@@ -782,7 +721,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										组件
+										根帖信息管理
 
 									</a>
 
@@ -796,7 +735,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										按钮 &amp; 图表
+										回复帖子信息管理
 
 									</a>
 
@@ -810,21 +749,31 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										树菜单
+										版面信息管理
+
+									</a>
+
+								</li>
+                                <li>
+
+									<a href="wuye.html">
+
+										<i class="icon-double-angle-right"></i>
+
+										论坛类别信息管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
+								<!--<li>
 
 									<a href="jquery-ui.html">
 
 										<i class="icon-double-angle-right"></i>
 
-										jQuery UI
+										找群团
 
 									</a>
 
@@ -838,98 +787,15 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										可拖拽列表
+										志愿服务
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
-								<li>
-
-									<a href="#" class="dropdown-toggle">
-
-										<i class="icon-double-angle-right"></i>
-
-
-
-										三级菜单
-
-										<b class="arrow icon-angle-down"></b>
-
-									</a>
-
-
-
-									<ul class="submenu">
-
-										<li>
-
-											<a href="#">
-
-												<i class="icon-leaf"></i>
-
-												第一级
-
-											</a>
-
-										</li>
-
-
-
-										<li>
-
-											<a href="#" class="dropdown-toggle">
-
-												<i class="icon-pencil"></i>
-
-
-
-												第四级
-
-												<b class="arrow icon-angle-down"></b>
-
-											</a>
-
-
-
-											<ul class="submenu">
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-plus"></i>
-
-														添加产品
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-eye-open"></i>
-
-														查看商品
-
-													</a>
-
-												</li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
-
+								
 							</ul>
 
 						</li>
@@ -942,7 +808,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 前台页面管理 </span>
 
 
 
@@ -960,7 +826,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										简单 &amp; 动态
+										头部菜单管理
 
 									</a>
 
@@ -974,7 +840,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										论坛模板图管理
 
 									</a>
 
@@ -992,7 +858,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 表单 </span>
+								<span class="menu-text"> 附件管理 </span>
 
 
 
@@ -1010,25 +876,13 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										表单组件
+										公告管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
-
-									<a href="form-wizard.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										向导提示 &amp; 验证
-
-									</a>
-
-								</li>
 
 
 
@@ -1070,7 +924,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1088,13 +942,8 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>
 
 								</span>
 
@@ -1104,223 +953,20 @@
 
 
 
-						<li>
+						<!--<li>
 
 							<a href="gallery.html">
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
-						</li>
+						</li>-->
 
 
 
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-tag"></i>
-
-								<span class="menu-text"> 更多页面 </span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="profile.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										用户信息
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="inbox.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										收件箱
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="pricing.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										售价单
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="invoice.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										购物车
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="timeline.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										时间轴
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="login.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										登录 &amp; 注册
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
-
-
-
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-file-alt"></i>
-
-
-
-								<span class="menu-text">
-
-									其他页面
-
-									<span class="badge badge-primary ">5</span>
-
-								</span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="faq.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										帮助
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-404.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										404错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-500.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										500错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="grid.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										网格
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="blank.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										空白页面
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
 
 					</ul><!-- /.nav-list -->
 
@@ -1355,14 +1001,14 @@
 						</script>
 
 
-
+                        <!--第二行右侧第一行-->
 						<ul class="breadcrumb">
 
 							<li>
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
@@ -1370,23 +1016,23 @@
 
 							<li>
 
-								<a href="#">Tables</a>
+								<a href="#">社区管理</a>
 
 							</li>
 
-							<li class="active">jqGrid plugin</li>
+							<li class="active">社区信息</li>
 
 						</ul><!-- .breadcrumb -->
 
 
-
+                        <!--第二行右侧搜索框-->
 						<div class="nav-search" id="nav-search">
 
 							<form class="form-search">
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1401,18 +1047,18 @@
 
 
 					<div class="page-content">
-
+                        <!--社区管理右侧第二行-->
 						<div class="page-header">
 
 							<h1>
 
-								jqGrid
+								社区管理
 
 								<small>
 
 									<i class="icon-double-angle-right"></i>
 
-									Dynamic tables and grids using jqGrid plugin
+									社区信息
 
 								</small>
 
@@ -1421,7 +1067,7 @@
 						</div><!-- /.page-header -->
 
 
-
+                        <!--社区管理右侧第三行-->
 						<div class="row">
 
 							<div class="col-xs-12">
@@ -1436,7 +1082,7 @@
 
 
 
-									Please note that demo server is not configured to save the changes, therefore you may get an error message.
+									您的数据可能会提交到系统后台，请谨慎操作。
 
 									<button class="close" data-dismiss="alert">
 
@@ -1485,13 +1131,13 @@
 					</div>
 
 
-
+                     <!--社区信息页面的工具按钮侧滑-->
 					<div class="ace-settings-box" id="ace-settings-box">
 
 						<div>
 
 							<div class="pull-left">
-
+                                <!--第二行右侧的下拉框中的四个颜色选项-->
 								<select id="skin-colorpicker" class="hide">
 
 									<option data-skin="default" value="#438EB9">#438EB9</option>
@@ -1575,7 +1221,7 @@
 
 
 			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-
+                <!--社区信息页面右侧的最下方的向上箭头按钮-->
 				<i class="icon-double-angle-up icon-only bigger-110"></i>
 
 			</a>
@@ -1675,7 +1321,7 @@
 
 
 		<script type="text/javascript">
-
+           //表格数据
 			var grid_data = 
 
 			[ 
@@ -1750,7 +1396,7 @@
 
 					height: 250,
 
-					colNames:[' ', 'ID','Last Sales','Name', 'Stock', 'Ship via','Notes'],
+					colNames:[' ', 'ID','申报日期','社区名称', '社区状态', '社区位置','备注'],
 
 					colModel:[
 
@@ -1834,7 +1480,7 @@
 
 					editurl: $path_base+"/dummy.html",//nothing is saved
 
-					caption: "jqGrid with inline editing",
+					caption: "社区基础信息管理",
 
 			
 

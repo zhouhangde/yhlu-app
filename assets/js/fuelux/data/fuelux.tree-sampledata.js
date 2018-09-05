@@ -27,66 +27,68 @@ DataSourceTree.prototype.data = function(options, callback) {
 };
 
 var tree_data = {
-	'for-sale' : {name: 'For Sale', type: 'folder'}	,
-	'vehicles' : {name: 'Vehicles', type: 'folder'}	,
-	'rentals' : {name: 'Rentals', type: 'folder'}	,
-	'real-estate' : {name: 'Real Estate', type: 'folder'}	,
-	'pets' : {name: 'Pets', type: 'folder'}	,
-	'tickets' : {name: 'Tickets', type: 'item'}	,
-	'services' : {name: 'Services', type: 'item'}	,
-	'personals' : {name: 'Personals', type: 'item'}
+	'for-sale' : {name: '便民服务', type: 'item'}	,
+	'vehicles' : {name: '工作人员管理', type: 'item'}	,
+	'rentals' : {name: '便捷通道', type: 'folder'}	,
+	'real-estate' : {name: '社区管理', type: 'folder'}	,
+	'pets' : {name: '社区分布', type: 'folder'}	,
+	'tickets' : {name: '角色管理', type: 'item'}	,
+	'services' : {name: '权限管理', type: 'item'}	,
+	'personals' : {name: '物业管理', type: 'item'}
 }
-tree_data['for-sale']['additionalParameters'] = {
-	'children' : {
-		'appliances' : {name: 'Appliances', type: 'item'},
-		'arts-crafts' : {name: 'Arts & Crafts', type: 'item'},
-		'clothing' : {name: 'Clothing', type: 'item'},
-		'computers' : {name: 'Computers', type: 'item'},
-		'jewelry' : {name: 'Jewelry', type: 'item'},
-		'office-business' : {name: 'Office & Business', type: 'item'},
-		'sports-fitness' : {name: 'Sports & Fitness', type: 'item'}
-	}
-}
-tree_data['vehicles']['additionalParameters'] = {
-	'children' : {
-		'cars' : {name: 'Cars', type: 'folder'},
-		'motorcycles' : {name: 'Motorcycles', type: 'item'},
-		'boats' : {name: 'Boats', type: 'item'}
-	}
-}
-tree_data['vehicles']['additionalParameters']['children']['cars']['additionalParameters'] = {
-	'children' : {
-		'classics' : {name: 'Classics', type: 'item'},
-		'convertibles' : {name: 'Convertibles', type: 'item'},
-		'coupes' : {name: 'Coupes', type: 'item'},
-		'hatchbacks' : {name: 'Hatchbacks', type: 'item'},
-		'hybrids' : {name: 'Hybrids', type: 'item'},
-		'suvs' : {name: 'SUVs', type: 'item'},
-		'sedans' : {name: 'Sedans', type: 'item'},
-		'trucks' : {name: 'Trucks', type: 'item'}
-	}
-}
+// tree_data['for-sale']['additionalParameters'] = {
+// 	'children' : {
+// 		'appliances' : {name: '便民服务', type: 'item'}
+// 		// 'arts-crafts' : {name: 'Arts & Crafts', type: 'item'},
+// 		// 'clothing' : {name: 'Clothing', type: 'item'},
+// 		// 'computers' : {name: 'Computers', type: 'item'},
+// 		// 'jewelry' : {name: 'Jewelry', type: 'item'},
+// 		// 'office-business' : {name: 'Office & Business', type: 'item'},
+// 		// 'sports-fitness' : {name: 'Sports & Fitness', type: 'item'}
+// 	}
+// }
+// tree_data['vehicles']['additionalParameters'] = {
+// 	'children' : {
+// 		'cars' : {name: '工作人员管理', type: 'folder'}
+// 		// 'motorcycles' : {name: 'Motorcycles', type: 'item'},
+// 		// 'boats' : {name: 'Boats', type: 'item'}
+// 	}
+// }
+// tree_data['vehicles']['additionalParameters']['children']['cars']['additionalParameters'] = {
+// 	'children' : {
+// 		'classics' : {name: 'Classics', type: 'item'},
+// 		'convertibles' : {name: 'Convertibles', type: 'item'},
+// 		'coupes' : {name: 'Coupes', type: 'item'},
+// 		'hatchbacks' : {name: 'Hatchbacks', type: 'item'},
+// 		'hybrids' : {name: 'Hybrids', type: 'item'},
+// 		'suvs' : {name: 'SUVs', type: 'item'},
+// 		'sedans' : {name: 'Sedans', type: 'item'},
+// 		'trucks' : {name: 'Trucks', type: 'item'}
+// 	}
+// }
 
 tree_data['rentals']['additionalParameters'] = {
 	'children' : {
-		'apartments-rentals' : {name: 'Apartments', type: 'item'},
-		'office-space-rentals' : {name: 'Office Space', type: 'item'},
-		'vacation-rentals' : {name: 'Vacation Rentals', type: 'item'}
+		'apartments-rentals' : {name: '一键提报', type: 'item'},
+		'office-space-rentals' : {name: '找书记', type: 'item'},
+		'vacation-rentals' : {name: '找委员会', type: 'item'},
+		'classics' : {name: '找物业', type: 'item'},
+		'convertibles' : {name: '找群团', type: 'item'},
+		'coupes' : {name: '志愿服务', type: 'item'},
 	}
 }
 tree_data['real-estate']['additionalParameters'] = {
 	'children' : {
-		'apartments' : {name: 'Apartments', type: 'item'},
-		'villas' : {name: 'Villas', type: 'item'},
-		'plots' : {name: 'Plots', type: 'item'}
+		'apartments' : {name: '社区信息', type: 'item'}
+		// 'villas' : {name: 'Villas', type: 'item'},
+		// 'plots' : {name: 'Plots', type: 'item'}
 	}
 }
 tree_data['pets']['additionalParameters'] = {
 	'children' : {
-		'cats' : {name: 'Cats', type: 'item'},
-		'dogs' : {name: 'Dogs', type: 'item'},
-		'horses' : {name: 'Horses', type: 'item'},
-		'reptiles' : {name: 'Reptiles', type: 'item'}
+		'cats' : {name: '公告管理', type: 'item'},
+		'dogs' : {name: '编辑器', type: 'item'},
+		'horses' : {name: '文件上传', type: 'item'}
 	}
 }
 

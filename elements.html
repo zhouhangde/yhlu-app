@@ -6,74 +6,27 @@
 
 		<meta charset="utf-8" />
 
-		<title>UI组件 - Bootstrap后台管理系统模版Ace下载</title>
-
-		 
-
+		<title>宇航论坛后台管理系统</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
 		<!-- basic styles -->
-
-
-
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
 		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css">
-
-
-
 		<!--[if IE 7]>
-
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- page specific plugin styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.custom.min.css" />
-
 		<link rel="stylesheet" href="assets/css/jquery.gritter.css" />
-
-
-
+		<link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
 		<!-- fonts -->
-
-
-
-		 
-
-
-
 		<!-- ace styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
-
-
-
 		<!--[if lte IE 8]>
-
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- inline styles related to this page -->
-
-
-
 		<style>
 
 			.spinner-preview {
@@ -158,7 +111,7 @@
 
 							<i class="icon-leaf"></i>
 
-							Ace Admin
+							宇航论坛后台管理系统
 
 						</small>
 
@@ -620,7 +573,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -633,8 +586,7 @@
 									<a href="#">
 
 										<i class="icon-user"></i>
-
-										Profile
+                                         个人资料
 
 									</a>
 
@@ -648,11 +600,11 @@
 
 								<li>
 
-									<a href="#">
+									<a href="login.html">
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -762,6 +714,7 @@
 
 
 
+					<!--手风琴下拉菜单-->
 					<ul class="nav nav-list">
 
 						<li>
@@ -770,7 +723,7 @@
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 控制台 </span>
+								<span class="menu-text"> 服务台 </span>
 
 							</a>
 
@@ -784,7 +737,7 @@
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 用户信息管理 </span>
 
 							</a>
 
@@ -798,7 +751,7 @@
 
 								<i class="icon-desktop"></i>
 
-								<span class="menu-text"> UI 组件 </span>
+								<span class="menu-text"> 帖子管理 </span>
 
 
 
@@ -816,7 +769,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										组件
+										根帖信息管理
 
 									</a>
 
@@ -830,7 +783,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										按钮 &amp; 图表
+										回复帖子信息管理
 
 									</a>
 
@@ -844,21 +797,31 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										树菜单
+										版面信息管理
+
+									</a>
+
+								</li>
+                                <li>
+
+									<a href="wuye.html">
+
+										<i class="icon-double-angle-right"></i>
+
+										论坛类别信息管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
+								<!--<li>
 
 									<a href="jquery-ui.html">
 
 										<i class="icon-double-angle-right"></i>
 
-										jQuery UI
+										找群团
 
 									</a>
 
@@ -872,98 +835,15 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										可拖拽列表
+										志愿服务
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
-								<li>
-
-									<a href="#" class="dropdown-toggle">
-
-										<i class="icon-double-angle-right"></i>
-
-
-
-										三级菜单
-
-										<b class="arrow icon-angle-down"></b>
-
-									</a>
-
-
-
-									<ul class="submenu">
-
-										<li>
-
-											<a href="#">
-
-												<i class="icon-leaf"></i>
-
-												第一级
-
-											</a>
-
-										</li>
-
-
-
-										<li>
-
-											<a href="#" class="dropdown-toggle">
-
-												<i class="icon-pencil"></i>
-
-
-
-												第四级
-
-												<b class="arrow icon-angle-down"></b>
-
-											</a>
-
-
-
-											<ul class="submenu">
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-plus"></i>
-
-														添加产品
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-eye-open"></i>
-
-														查看商品
-
-													</a>
-
-												</li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
-
+								
 							</ul>
 
 						</li>
@@ -976,7 +856,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 前台页面管理 </span>
 
 
 
@@ -994,7 +874,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										简单 &amp; 动态
+										头部菜单管理
 
 									</a>
 
@@ -1008,7 +888,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										论坛模板图管理
 
 									</a>
 
@@ -1026,7 +906,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 表单 </span>
+								<span class="menu-text"> 附件管理 </span>
 
 
 
@@ -1044,25 +924,13 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										表单组件
+										公告管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
-
-									<a href="form-wizard.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										向导提示 &amp; 验证
-
-									</a>
-
-								</li>
 
 
 
@@ -1104,7 +972,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1122,13 +990,8 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>
 
 								</span>
 
@@ -1138,226 +1001,22 @@
 
 
 
-						<li>
+						<!--<li>
 
 							<a href="gallery.html">
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
-						</li>
+						</li>-->
 
 
 
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-tag"></i>
-
-								<span class="menu-text"> 更多页面 </span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="profile.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										用户信息
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="inbox.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										收件箱
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="pricing.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										售价单
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="invoice.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										购物车
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="timeline.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										时间轴
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="login.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										登录 &amp; 注册
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
-
-
-
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-file-alt"></i>
-
-
-
-								<span class="menu-text">
-
-									其他页面
-
-									<span class="badge badge-primary ">5</span>
-
-								</span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="faq.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										帮助
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-404.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										404错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-500.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										500错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="grid.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										网格
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="blank.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										空白页面
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
 
 					</ul><!-- /.nav-list -->
-
 
 
 					<div class="sidebar-collapse" id="sidebar-collapse">
@@ -1396,7 +1055,7 @@
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
@@ -1404,11 +1063,11 @@
 
 							<li>
 
-								<a href="#">UI Elements</a>
+								<a href="#">帖子管理</a>
 
 							</li>
 
-							<li class="active">Elements</li>
+							<li class="active">根帖信息管理</li>
 
 						</ul><!-- .breadcrumb -->
 
@@ -1420,7 +1079,7 @@
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1440,23 +1099,21 @@
 
 							<h1>
 
-								UI Elements
+								根帖信息管理
 
-								<small>
+								<!--<small>
 
 									<i class="icon-double-angle-right"></i>
 
 									Common UI Features &amp; Elements
 
-								</small>
+								</small>-->
 
 							</h1>
 
 						</div><!-- /.page-header -->
 
-
-
-						<div class="row">
+                        <div class="row">
 
 							<div class="col-xs-12">
 
@@ -1464,1565 +1121,35 @@
 
 
 
-								<div class="row">
+								<div class="alert alert-info">
 
-									<div class="col-sm-6">
+									<i class="icon-hand-right"></i>
 
-										<div class="tabbable">
 
-											<ul class="nav nav-tabs" id="myTab">
 
-												<li class="active">
+									您的数据可能会提交到系统后台，请谨慎操作。
 
-													<a data-toggle="tab" href="#home">
+									<button class="close" data-dismiss="alert">
 
-														<i class="green icon-home bigger-110"></i>
+										<i class="icon-remove"></i>
 
-														Home
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#profile">
-
-														Messages
-
-														<span class="badge badge-danger">4</span>
-
-													</a>
-
-												</li>
-
-
-
-												<li class="dropdown">
-
-													<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-														Dropdown &nbsp;
-
-														<i class="icon-caret-down bigger-110 width-auto"></i>
-
-													</a>
-
-
-
-													<ul class="dropdown-menu dropdown-info">
-
-														<li>
-
-															<a data-toggle="tab" href="#dropdown1">@fat</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a data-toggle="tab" href="#dropdown2">@mdo</a>
-
-														</li>
-
-													</ul>
-
-												</li>
-
-											</ul>
-
-
-
-											<div class="tab-content">
-
-												<div id="home" class="tab-pane in active">
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-
-
-												<div id="profile" class="tab-pane">
-
-													<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-
-												</div>
-
-
-
-												<div id="dropdown1" class="tab-pane">
-
-													<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-
-												</div>
-
-
-
-												<div id="dropdown2" class="tab-pane">
-
-													<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-
-
-									<div class="vspace-xs-6"></div>
-
-
-
-									<div class="col-sm-6">
-
-										<div class="tabbable tabs-below">
-
-											<div class="tab-content">
-
-												<div id="home2" class="tab-pane in active">
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-
-
-												<div id="profile2" class="tab-pane">
-
-													<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-
-												</div>
-
-
-
-												<div id="dropdown12" class="tab-pane">
-
-													<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-
-												</div>
-
-											</div>
-
-
-
-											<ul class="nav nav-tabs" id="myTab2">
-
-												<li class="active">
-
-													<a data-toggle="tab" href="#home2">Home</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#profile2">Profile</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#dropdown12">More</a>
-
-												</li>
-
-											</ul>
-
-										</div>
-
-									</div>
-
-								</div><!-- /row -->
-
-
-
-								<div class="space"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<div class="tabbable tabs-left">
-
-											<ul class="nav nav-tabs" id="myTab3">
-
-												<li class="active">
-
-													<a data-toggle="tab" href="#home3">
-
-														<i class="pink icon-dashboard bigger-110"></i>
-
-														Home
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#profile3">
-
-														<i class="blue icon-user bigger-110"></i>
-
-														Profile
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#dropdown13">
-
-														<i class="icon-rocket"></i>
-
-														More
-
-													</a>
-
-												</li>
-
-											</ul>
-
-
-
-											<div class="tab-content">
-
-												<div id="home3" class="tab-pane in active">
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-
-
-												<div id="profile3" class="tab-pane">
-
-													<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-
-
-												<div id="dropdown13" class="tab-pane">
-
-													<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-
-
-									<div class="vspace-sm-6"></div>
-
-
-
-									<div class="col-sm-6">
-
-										<div class="tabbable">
-
-											<ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab4">
-
-												<li class="active">
-
-													<a data-toggle="tab" href="#home4">Home</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#profile4">Profile</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a data-toggle="tab" href="#dropdown14">More</a>
-
-												</li>
-
-											</ul>
-
-
-
-											<div class="tab-content">
-
-												<div id="home4" class="tab-pane in active">
-
-													<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-
-												</div>
-
-
-
-												<div id="profile4" class="tab-pane">
-
-													<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-
-												</div>
-
-
-
-												<div id="dropdown14" class="tab-pane">
-
-													<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-								</div><!-- /row -->
-
-
-
-								<div class="hr hr-double hr-dotted hr18"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="row header smaller lighter blue">
-
-											<span class="col-xs-6"> Accordion </span><!-- /span -->
-
-
-
-											<span class="col-xs-6">
-
-												<span class="pull-right inline">
-
-													<span class="grey smaller-80 bolder">style:</span>
-
-
-
-													<span class="btn-toolbar inline middle no-margin">
-
-														<span id="accordion-style" data-toggle="buttons" class="btn-group no-margin">
-
-															<label class="btn btn-xs btn-yellow active">
-
-																<input type="radio" value="1" />
-
-																1
-
-															</label>
-
-
-
-															<label class="btn btn-xs btn-yellow">
-
-																<input type="radio" value="2" />
-
-																2
-
-															</label>
-
-														</span>
-
-													</span>
-
-												</span>
-
-											</span><!-- /span -->
-
-										</h3>
-
-
-
-										<div id="accordion" class="accordion-style1 panel-group">
-
-											<div class="panel panel-default">
-
-												<div class="panel-heading">
-
-													<h4 class="panel-title">
-
-														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-
-															<i class="icon-angle-down bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
-
-															&nbsp;Group Item #1
-
-														</a>
-
-													</h4>
-
-												</div>
-
-
-
-												<div class="panel-collapse collapse in" id="collapseOne">
-
-													<div class="panel-body">
-
-														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-
-													</div>
-
-												</div>
-
-											</div>
-
-
-
-											<div class="panel panel-default">
-
-												<div class="panel-heading">
-
-													<h4 class="panel-title">
-
-														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-
-															<i class="icon-angle-right bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
-
-															&nbsp;Group Item #2
-
-														</a>
-
-													</h4>
-
-												</div>
-
-
-
-												<div class="panel-collapse collapse" id="collapseTwo">
-
-													<div class="panel-body">
-
-														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-
-													</div>
-
-												</div>
-
-											</div>
-
-
-
-											<div class="panel panel-default">
-
-												<div class="panel-heading">
-
-													<h4 class="panel-title">
-
-														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-
-															<i class="icon-angle-right bigger-110" data-icon-hide="icon-angle-down" data-icon-show="icon-angle-right"></i>
-
-															&nbsp;Group Item #3
-
-														</a>
-
-													</h4>
-
-												</div>
-
-
-
-												<div class="panel-collapse collapse" id="collapseThree">
-
-													<div class="panel-body">
-
-														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header smaller lighter green">Progress Bar</h3>
-
-
-
-										<div class="row">
-
-											<div class="col-xs-8">
-
-												<div class="progress" data-percent="66%">
-
-													<div class="progress-bar" style="width:66%;"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-striped" data-percent="25%">
-
-													<div class="progress-bar progress-bar-success" style="width: 25%;"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-small progress-striped active">
-
-													<div class="progress-bar progress-bar-warning" style="width: 40%;"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-mini">
-
-													<div class="progress-bar progress-danger" style="width: 35%;"></div>
-
-												</div>
-
-
-
-												<div class="progress">
-
-													<div class="progress-bar progress-bar-success" style="width: 35%;"></div>
-
-
-
-													<div class="progress-bar progress-bar-warning" style="width: 20%;"></div>
-
-
-
-													<div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-striped">
-
-													<div class="progress-bar progress-bar-purple" style="width: 65%"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-striped">
-
-													<div class="progress-bar progress-bar-pink" style="width: 40%"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-striped active">
-
-													<div class="progress-bar progress-bar-yellow" style="width: 60%"></div>
-
-												</div>
-
-
-
-												<div class="progress progress-striped">
-
-													<div class="progress-bar progress-bar-inverse" style="width: 80%"></div>
-
-												</div>
-
-											</div><!-- /span -->
-
-
-
-											<div class="col-xs-4 center">
-
-												<div class="easy-pie-chart percentage" data-percent="20" data-color="#D15B47">
-
-													<span class="percent">20</span>%
-
-												</div>
-
-
-
-												<hr />
-
-												<div class="easy-pie-chart percentage" data-percent="55" data-color="#87CEEB">
-
-													<span class="percent">55</span>%
-
-												</div>
-
-
-
-												<hr />
-
-												<div class="easy-pie-chart percentage" data-percent="90" data-color="#87B87F">
-
-													<span class="percent">90</span>%
-
-												</div>
-
-											</div><!-- /span -->
-
-										</div><!-- /row-fluid -->
-
-									</div><!-- /span -->
-
-								</div><!-- /row -->
-
-
-
-								<hr />
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<div class="widget-box">
-
-											<div class="widget-header">
-
-												<h4 class="smaller">
-
-													Tooltips
-
-													<small>different directions and colors</small>
-
-												</h4>
-
-											</div>
-
-
-
-											<div class="widget-body">
-
-												<div class="widget-main">
-
-													<p class="muted">
-
-														Tight pants next level keffiyeh
-
-														<a title="Default tooltip" data-rel="tooltip" href="#">you probably</a>
-
-														haven't heard of them. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel
-
-														<a title="Another tooltip" data-rel="tooltip" href="#">have a</a>
-
-														terry richardson vinyl chambray. A really ironic artisan
-
-														<a data-rel="tooltip" href="#" data-original-title="Another one here too">whatever</a>
-
-														keytar, scenester farm-to-table banksy Austin
-
-														<a title="The last tip!" data-rel="tooltip" href="#">twitter</a>
-
-														handle.
-
-													</p>
-
-
-
-													<hr />
-
-													<p>
-
-														<span class="btn btn-sm" data-rel="tooltip" title="Default">Default</span>
-
-														<span class="btn btn-warning btn-sm tooltip-warning" data-rel="tooltip" data-placement="left" title="Left Warning">Left</span>
-
-														<span class="btn btn-success btn-sm tooltip-success" data-rel="tooltip" data-placement="right" title="Right Success">Right</span>
-
-														<span class="btn btn-danger btn-sm tooltip-error" data-rel="tooltip" data-placement="top" title="Top Danger">Top</span>
-
-														<span class="btn btn-info btn-sm tooltip-info" data-rel="tooltip" data-placement="bottom" title="Bottm Info">Bottom</span>
-
-													</p>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-
-
-									<div class="col-sm-6">
-
-										<div class="widget-box">
-
-											<div class="widget-header">
-
-												<h4 class="smaller">Popovers</h4>
-
-											</div>
-
-
-
-											<div class="widget-body">
-
-												<div class="widget-main">
-
-													<p>
-
-														<span class="btn btn-sm" data-rel="popover" title="Default" data-content="Heads up! This alert needs your attention, but it's not super important.">Default</span>
-
-														<span class="btn btn-success btn-sm tooltip-success" data-rel="popover" data-placement="right" title="<i class='icon-ok green'></i> Right Success" data-content="Well done! You successfully read this important alert message.">Right</span>
-
-														<span class="btn btn-warning btn-sm tooltip-warning" data-rel="popover" data-placement="left" title="<i class='icon-warning-sign orange'></i> Left Warning" data-content="Warning! Best check yo self, you're not looking too good.">Left</span>
-
-													</p>
-
-
-
-													<p>
-
-														<span class="btn btn-danger btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title="<i class='icon-bolt red'></i> Top Danger" data-content="Oh snap! Change a few things up and try submitting again.">Top</span>
-
-														<span class="btn btn-info btn-sm tooltip-info" data-rel="popover" data-placement="bottom" title="Some Info" data-content=" Heads up! This alert needs your attention, but it's not super important.">Bottom</span>
-
-														<span class="btn btn-inverse btn-sm popover-notitle" data-rel="popover" data-placement="bottom" data-content="Popover without a title!">No Title</span>
-
-													</p>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
-
-								</div><!-- /row -->
-
-
-
-								<hr />
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header smaller lighter green">
-
-											<i class="icon-bullhorn"></i>
-
-											Alerts
-
-										</h3>
-
-
-
-										<div class="alert alert-danger">
-
-											<button type="button" class="close" data-dismiss="alert">
-
-												<i class="icon-remove"></i>
-
-											</button>
-
-
-
-											<strong>
-
-												<i class="icon-remove"></i>
-
-												Oh snap!
-
-											</strong>
-
-
-
-											Change a few things up and try submitting again.
-
-											<br />
-
-										</div>
-
-
-
-										<div class="alert alert-warning">
-
-											<button type="button" class="close" data-dismiss="alert">
-
-												<i class="icon-remove"></i>
-
-											</button>
-
-											<strong>Warning!</strong>
-
-
-
-											Best check yo self, you're not looking too good.
-
-											<br />
-
-										</div>
-
-
-
-										<div class="alert alert-block alert-success">
-
-											<button type="button" class="close" data-dismiss="alert">
-
-												<i class="icon-remove"></i>
-
-											</button>
-
-
-
-											<p>
-
-												<strong>
-
-													<i class="icon-ok"></i>
-
-													Well done!
-
-												</strong>
-
-												You successfully read this important alert message.
-
-											</p>
-
-
-
-											<p>
-
-												<button class="btn btn-sm btn-success">Do This</button>
-
-												<button class="btn btn-sm">Or This One</button>
-
-											</p>
-
-										</div>
-
-
-
-										<div class="alert alert-info">
-
-											<button type="button" class="close" data-dismiss="alert">
-
-												<i class="icon-remove"></i>
-
-											</button>
-
-											<strong>Heads up!</strong>
-
-
-
-											This alert needs your attention, but it's not super important.
-
-											<br />
-
-										</div>
-
-									</div><!-- /span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="row header smaller lighter orange">
-
-											<span class="col-sm-8">
-
-												<i class="icon-bell-alt"></i>
-
-												Gritter Notifications
-
-											</span><!-- /span -->
-
-
-
-											<span class="col-sm-4">
-
-												<label class="pull-right inline">
-
-													<small class="muted">Dark:</small>
-
-
-
-													<input id="gritter-light" checked="" type="checkbox" class="ace ace-switch ace-switch-5" />
-
-													<span class="lbl"></span>
-
-												</label>
-
-											</span><!-- /span -->
-
-										</h3>
-
-
-
-										<p>
-
-											<i>Click to see</i>
-
-										</p>
-
-
-
-										<p>
-
-											<button class="btn" id="gritter-regular">Regular</button>
-
-											<button class="btn btn-info" id="gritter-sticky">Sticky</button>
-
-											<button class="btn btn-success" id="gritter-without-image">Without Image</button>
-
-										</p>
-
-
-
-										<p>
-
-											<button class="btn btn-danger" id="gritter-error">Error</button>
-
-											<button class="btn btn-warning" id="gritter-max3">Max 3</button>
-
-											<button class="btn btn-primary" id="gritter-center">Center</button>
-
-											<button class="btn btn-inverse" id="gritter-remove">Remove</button>
-
-										</p>
-
-									</div><!-- /span -->
-
-								</div><!-- /row -->
-
-
-
-								<hr />
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<div>
-
-											<h3 class="header smaller lighter purple">
-
-												Bootstrap Modals
-
-												<small>(Bootbox.js)</small>
-
-											</h3>
-
-
-
-											<p>
-
-												<button class="btn" id="bootbox-regular">Regular Dialog</button>
-
-												<button class="btn btn-info" id="bootbox-confirm">Confirm</button>
-
-												<button class="btn btn-success" id="bootbox-options">More Options</button>
-
-											</p>
-
-										</div><!-- /row -->
-
-
-
-										<div class="space-24"></div>
-
-
-
-										<div class="row">
-
-											<div class="col-xs-12">
-
-												<h3 class="header smaller lighter grey">
-
-													<i class="icon-spinner icon-spin orange bigger-125"></i>
-
-													Imageless Spinner
-
-													<small>(spin.js)</small>
-
-												</h3>
-
-											</div>
-
-
-
-											<div class="col-xs-12">
-
-												<i>Change a value to begin</i>
-
-
-
-												<div class="pull-right center spinner-preview" id="spinner-preview"></div>
-
-
-
-												<form class="form-horizontal" id="spinner-opts">
-
-													<label>
-
-														<small class="lighter">Lines:</small>
-
-
-
-														<input class="hidden" type="text" name="lines" data-min="5" data-max="16" data-step="2" value="12" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Length:</small>
-
-
-
-														<input class="hidden" type="text" name="length" data-min="0" data-max="30" value="7" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Width:</small>
-
-
-
-														<input class="hidden" type="text" name="width" data-min="2" data-max="20" value="4" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Radius:</small>
-
-
-
-														<input class="hidden" type="text" name="radius" data-min="0" data-max="40" value="10" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Corners:</small>
-
-
-
-														<input class="hidden" type="text" name="corners" data-min="0" data-max="1" data-step="0.1" value="1" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Rotate:</small>
-
-
-
-														<input class="hidden" type="text" name="rotate" data-min="0" data-max="90" value="0" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Trail:</small>
-
-
-
-														<input class="hidden" type="text" name="trail" data-min="10" data-max="100" value="60" />
-
-													</label>
-
-
-
-													<label>
-
-														<small class="lighter">Speed:</small>
-
-
-
-														<input class="hidden" type="text" name="speed" data-min="0.5" data-max="2.2" data-step="0.1" value="1" />
-
-													</label>
-
-												</form>
-
-											</div><!-- /row -->
-
-										</div><!-- /row -->
-
-									</div><!-- /span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header smaller lighter red">Bootstrap Wells</h3>
-
-
-
-										<div class="well">
-
-											<h4 class="green smaller lighter">Normal Well</h4>
-
-											Use the well as a simple effect on an element to give it an inset effect.
-
-										</div>
-
-
-
-										<div class="well well-lg">
-
-											<h4 class="blue">Large Well</h4>
-
-											Control padding and rounded corners with two optional modifier classes.
-
-										</div>
-
-										<div class="well well-sm"> This is a small well </div>
-
-									</div><!-- /span -->
-
-								</div><!-- /row -->
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header smaller lighter green">Dropdowns</h3>
-
-
-
-										<div class="dropdown dropdown-preview">
-
-											<ul class="dropdown-menu">
-
-												<li>
-
-													<a href="#" tabindex="-1">Action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Another action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Something else here</a>
-
-												</li>
-
-
-
-												<li class="divider"></li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Separated link</a>
-
-												</li>
-
-											</ul>
-
-										</div>
-
-
-
-										<div class="dropdown dropdown-preview">
-
-											<ul class="dropdown-menu dropdown-danger">
-
-												<li>
-
-													<a href="#" tabindex="-1">Action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Another action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Something else here</a>
-
-												</li>
-
-
-
-												<li class="divider"></li>
-
-
-
-												<li class="dropdown-hover">
-
-													<a href="#" tabindex="-1" class="clearfix">
-
-														<span class="pull-left">More options</span>
-
-
-
-														<i class="icon-caret-right pull-right"></i>
-
-													</a>
-
-
-
-													<ul class="dropdown-menu dropdown-danger  pull-right">
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-													</ul>
-
-												</li>
-
-											</ul>
-
-										</div>
-
-
-
-										<div class="dropup dropdown-preview">
-
-											<ul class="dropdown-menu dropdown-purple">
-
-												<li>
-
-													<a href="#" tabindex="-1">Action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Another action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Something else here</a>
-
-												</li>
-
-
-
-												<li class="divider"></li>
-
-
-
-												<li class="dropdown-hover dropup">
-
-													<a href="#" tabindex="-1">More options</a>
-
-
-
-													<ul class="dropdown-menu pull-right">
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-													</ul>
-
-												</li>
-
-											</ul>
-
-										</div>
-
-
-
-										<div class="dropup dropdown-preview">
-
-											<ul class="dropdown-menu dropdown-light">
-
-												<li>
-
-													<a href="#" tabindex="-1">Action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Another action</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#" tabindex="-1">Something else here</a>
-
-												</li>
-
-
-
-												<li class="divider"></li>
-
-
-
-												<li class="dropup dropdown-hover">
-
-													<a href="#" tabindex="-1">More options</a>
-
-
-
-													<ul class="dropdown-menu pull-left">
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-
-
-														<li>
-
-															<a href="#" tabindex="-1">Second level link</a>
-
-														</li>
-
-													</ul>
-
-												</li>
-
-											</ul>
-
-										</div>
-
-									</div>
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="row header smaller lighter blue">
-
-											<span class="col-sm-7">
-
-												<i class="icon-th-large"></i>
-
-												Pills
-
-											</span><!-- /span -->
-
-
-
-											<span class="col-sm-5">
-
-												<label class="pull-right inline">
-
-													<small class="muted">Stacked:</small>
-
-
-
-													<input id="id-pills-stacked" checked="" type="checkbox" class="ace ace-switch ace-switch-5" />
-
-													<span class="lbl"></span>
-
-												</label>
-
-											</span><!-- /span -->
-
-										</h3>
-
-
-
-										<ul class="nav nav-pills">
-
-											<li class="active">
-
-												<a href="#">Home</a>
-
-											</li>
-
-
-
-											<li class="disabled">
-
-												<a href="#">Profile</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Messages</a>
-
-											</li>
-
-										</ul>
-
-									</div>
+									</button>
 
 								</div>
 
 
 
+								<table id="grid-table"></table>
+
+
+
+								<div id="grid-pager"></div>
+
+
+
 								<script type="text/javascript">
 
-									var $path_assets = "assets";//this will be used in gritter alerts containing images
+									var $path_base = "/";//this will be used in gritter alerts containing images
 
 								</script>
 
@@ -3034,6 +1161,8 @@
 
 						</div><!-- /.row -->
 
+
+						
 					</div><!-- /.page-content -->
 
 				</div><!-- /.main-content -->
@@ -3237,7 +1366,19 @@
 		<script src="assets/js/spin.min.js"></script>
 
 
+        <!-- page specific plugin scripts -->
 
+
+
+		<script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+
+		<script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+
+		<script src="assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+
+
+
+		<!-- ace scripts -->
 		<!-- ace scripts -->
 
 
@@ -3731,10 +1872,642 @@
 			
 
 			});
-
+            
+           
 		</script>
 
-	
+	     <script type="text/javascript">
+           //表格数据
+			var grid_data = 
+
+			[ 
+
+				{id:"1",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"2",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"3",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"4",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"5",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"7",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"8",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"9",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"10",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"11",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"12",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"13",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"14",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"15",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"16",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"17",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"18",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"19",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"20",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"21",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"22",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"23",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"}
+
+			];	
+
+			
+
+			jQuery(function($) {
+
+				var grid_selector = "#grid-table";
+
+				var pager_selector = "#grid-pager";
+
+			
+
+				jQuery(grid_selector).jqGrid({
+
+					//direction: "rtl",
+
+					
+
+					data: grid_data,
+
+					datatype: "local",
+
+					height: 250,
+
+					colNames:[' ', '帖子ID','帖子所属版面ID','帖子标题', '帖子内容', '帖子的发布者','帖子的发布时间','帖子表情','对帖子操作的时间','是否为置顶帖子','帖子被置顶的时间','是否为精华帖子','帖子被设为精华帖子的时间'],
+
+					colModel:[
+
+						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+
+							formatter:'actions', 
+
+							formatoptions:{ 
+
+								keys:true,
+
+								
+
+								delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
+
+								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+
+							}
+
+						},
+
+						{name:'id',index:'id', width:60, sorttype:"int", editable: true},
+
+						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+
+						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
+
+						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+
+						{name:'note',index:'note', width:150, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} ,
+						{name:'id',index:'id', width:60, sorttype:"int", editable: true},
+
+						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+
+						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
+
+						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+
+						{name:'note',index:'note', width:150, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
+
+					], 
+
+			
+
+					viewrecords : true,
+
+					rowNum:10,
+
+					rowList:[10,20,30],
+
+					pager : pager_selector,
+
+					altRows: true,
+
+					//toppager: true,
+
+					
+
+					multiselect: true,
+
+					//multikey: "ctrlKey",
+
+			        multiboxonly: true,
+
+			
+
+					loadComplete : function() {
+
+						var table = this;
+
+						setTimeout(function(){
+
+							styleCheckbox(table);
+
+							
+
+							updateActionIcons(table);
+
+							updatePagerIcons(table);
+
+							enableTooltips(table);
+
+						}, 0);
+
+					},
+
+			
+
+					editurl: $path_base+"/dummy.html",//nothing is saved
+
+					caption: "提报一览",
+
+			
+
+			
+
+					autowidth: true
+
+			
+
+				});
+
+			
+
+				//enable search/filter toolbar
+
+				//jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+
+			
+
+				//switch element when editing inline
+
+				function aceSwitch( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=checkbox]')
+
+								.wrap('<label class="inline" />')
+
+							.addClass('ace ace-switch ace-switch-5')
+
+							.after('<span class="lbl"></span>');
+
+					}, 0);
+
+				}
+
+				//enable datepicker
+
+				function pickDate( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=text]')
+
+								.datepicker({format:'yyyy-mm-dd' , autoclose:true}); 
+
+					}, 0);
+
+				}
+
+			
+
+			
+
+				//navButtons
+
+				jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+
+					{ 	//navbar options
+
+						edit: true,
+
+						editicon : 'icon-pencil blue',
+
+						add: true,
+
+						addicon : 'icon-plus-sign purple',
+
+						del: true,
+
+						delicon : 'icon-trash red',
+
+						search: true,
+
+						searchicon : 'icon-search orange',
+
+						refresh: true,
+
+						refreshicon : 'icon-refresh green',
+
+						view: true,
+
+						viewicon : 'icon-zoom-in grey',
+
+					},
+
+					{
+
+						//edit record form
+
+						//closeAfterEdit: true,
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//new record form
+
+						closeAfterAdd: true,
+
+						recreateForm: true,
+
+						viewPagerButtons: false,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//delete record form
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							if(form.data('styled')) return false;
+
+							
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_delete_form(form);
+
+							
+
+							form.data('styled', true);
+
+						},
+
+						onClick : function(e) {
+
+							alert(1);
+
+						}
+
+					},
+
+					{
+
+						//search form
+
+						recreateForm: true,
+
+						afterShowSearch: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+							style_search_form(form);
+
+						},
+
+						afterRedraw: function(){
+
+							style_search_filters($(this));
+
+						}
+
+						,
+
+						multipleSearch: true,
+
+						/**
+
+						multipleGroup:true,
+
+						showQuery: true
+
+						*/
+
+					},
+
+					{
+
+						//view record form
+
+						recreateForm: true,
+
+						beforeShowForm: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+						}
+
+					}
+
+				)
+
+			
+
+			
+
+				
+
+				function style_edit_form(form) {
+
+					//enable datepicker on "sdate" field and switches for "stock" field
+
+					form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+
+						.end().find('input[name=stock]')
+
+							  .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+			
+
+					//update buttons classes
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+					
+
+					buttons = form.next().find('.navButton a');
+
+					buttons.find('.ui-icon').remove();
+
+					buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+
+					buttons.eq(1).append('<i class="icon-chevron-right"></i>');		
+
+				}
+
+			
+
+				function style_delete_form(form) {
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+				}
+
+				
+
+				function style_search_filters(form) {
+
+					form.find('.delete-rule').val('X');
+
+					form.find('.add-rule').addClass('btn btn-xs btn-primary');
+
+					form.find('.add-group').addClass('btn btn-xs btn-success');
+
+					form.find('.delete-group').addClass('btn btn-xs btn-danger');
+
+				}
+
+				function style_search_form(form) {
+
+					var dialog = form.closest('.ui-jqdialog');
+
+					var buttons = dialog.find('.EditTable')
+
+					buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+
+					buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+
+					buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+
+				}
+
+				
+
+				function beforeDeleteCallback(e) {
+
+					var form = $(e[0]);
+
+					if(form.data('styled')) return false;
+
+					
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_delete_form(form);
+
+					
+
+					form.data('styled', true);
+
+				}
+
+				
+
+				function beforeEditCallback(e) {
+
+					var form = $(e[0]);
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_edit_form(form);
+
+				}
+
+			
+
+			
+
+			
+
+				//it causes some flicker when reloading or navigating grid
+
+				//it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+
+				//or go back to default browser checkbox styles for the grid
+
+				function styleCheckbox(table) {
+
+				/**
+
+					$(table).find('input:checkbox').addClass('ace')
+
+					.wrap('<label />')
+
+					.after('<span class="lbl align-top" />')
+
+			
+
+			
+
+					$('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+
+					.find('input.cbox[type=checkbox]').addClass('ace')
+
+					.wrap('<label />').after('<span class="lbl align-top" />');
+
+				*/
+
+				}
+
+				
+
+			
+
+				//unlike navButtons icons, action icons in rows seem to be hard-coded
+
+				//you can change them like this in here if you want
+
+				function updateActionIcons(table) {
+
+					/**
+
+					var replacement = 
+
+					{
+
+						'ui-icon-pencil' : 'icon-pencil blue',
+
+						'ui-icon-trash' : 'icon-trash red',
+
+						'ui-icon-disk' : 'icon-ok green',
+
+						'ui-icon-cancel' : 'icon-remove red'
+
+					};
+
+					$(table).find('.ui-pg-div span.ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+					*/
+
+				}
+
+				
+
+				//replace icons with FontAwesome icons like above
+
+				function updatePagerIcons(table) {
+
+					var replacement = 
+
+					{
+
+						'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+
+						'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+
+						'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+
+						'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+
+					};
+
+					$('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+				}
+
+			
+
+				function enableTooltips(table) {
+
+					$('.navtable .ui-pg-button').tooltip({container:'body'});
+
+					$(table).find('.ui-pg-div').tooltip({container:'body'});
+
+				}
+
+			
+
+				//var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+
+			
+
+			
+
+			});
+
+		</script>
 
 </body>
 

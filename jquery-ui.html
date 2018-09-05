@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8" />
 
-		<title>jQuery UI - Bootstrap后台管理系统模版Ace下载</title>
+		<title>社区应用后台管理系统</title>
 
 		 
 
@@ -43,7 +43,7 @@
 		 
 
 
-
+        <link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
 		<!-- ace styles -->
 
 
@@ -114,7 +114,7 @@
 
 							<i class="icon-leaf"></i>
 
-							Ace Admin
+							社区应用后台管理系统
 
 						</small>
 
@@ -576,7 +576,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -590,7 +590,7 @@
 
 										<i class="icon-user"></i>
 
-										Profile
+										个人资料
 
 									</a>
 
@@ -604,11 +604,11 @@
 
 								<li>
 
-									<a href="#">
+									<a href="login.html">
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -726,7 +726,7 @@
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 控制台 </span>
+								<span class="menu-text"> 便民服务 </span>
 
 							</a>
 
@@ -740,7 +740,7 @@
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 工作人员管理 </span>
 
 							</a>
 
@@ -754,7 +754,7 @@
 
 								<i class="icon-desktop"></i>
 
-								<span class="menu-text"> UI 组件 </span>
+								<span class="menu-text"> 便捷通道 </span>
 
 
 
@@ -772,7 +772,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										组件
+										一键提报
 
 									</a>
 
@@ -786,7 +786,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										按钮 &amp; 图表
+										找书记
 
 									</a>
 
@@ -800,12 +800,22 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										树菜单
+										找居委会
 
 									</a>
 
 								</li>
+                                <li>
 
+									<a href="wuye.html">
+
+										<i class="icon-double-angle-right"></i>
+
+										找物业
+
+									</a>
+
+								</li>
 
 
 								<li class="active">
@@ -814,7 +824,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jQuery UI
+										找群团
 
 									</a>
 
@@ -828,7 +838,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										可拖拽列表
+										志愿服务
 
 									</a>
 
@@ -836,89 +846,7 @@
 
 
 
-								<li>
-
-									<a href="#" class="dropdown-toggle">
-
-										<i class="icon-double-angle-right"></i>
-
-
-
-										三级菜单
-
-										<b class="arrow icon-angle-down"></b>
-
-									</a>
-
-
-
-									<ul class="submenu">
-
-										<li>
-
-											<a href="#">
-
-												<i class="icon-leaf"></i>
-
-												第一级
-
-											</a>
-
-										</li>
-
-
-
-										<li>
-
-											<a href="#" class="dropdown-toggle">
-
-												<i class="icon-pencil"></i>
-
-
-
-												第四级
-
-												<b class="arrow icon-angle-down"></b>
-
-											</a>
-
-
-
-											<ul class="submenu">
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-plus"></i>
-
-														添加产品
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-eye-open"></i>
-
-														查看商品
-
-													</a>
-
-												</li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
+							
 
 							</ul>
 
@@ -932,7 +860,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 社区管理 </span>
 
 
 
@@ -943,7 +871,7 @@
 
 
 							<ul class="submenu">
-
+<!--
 								<li>
 
 									<a href="tables.html">
@@ -954,7 +882,7 @@
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
@@ -964,7 +892,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										社区信息
 
 									</a>
 
@@ -982,7 +910,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 表单 </span>
+								<span class="menu-text"> 社区发布 </span>
 
 
 
@@ -1000,25 +928,13 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										表单组件
+										公告管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
-
-									<a href="form-wizard.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										向导提示 &amp; 验证
-
-									</a>
-
-								</li>
 
 
 
@@ -1060,7 +976,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1078,13 +994,8 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>
 
 								</span>
 
@@ -1100,7 +1011,7 @@
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
@@ -1108,209 +1019,6 @@
 
 
 
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-tag"></i>
-
-								<span class="menu-text"> 更多页面 </span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="profile.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										用户信息
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="inbox.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										收件箱
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="pricing.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										售价单
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="invoice.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										购物车
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="timeline.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										时间轴
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="login.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										登录 &amp; 注册
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
-
-
-
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-file-alt"></i>
-
-
-
-								<span class="menu-text">
-
-									其他页面
-
-									<span class="badge badge-primary ">5</span>
-
-								</span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="faq.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										帮助
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-404.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										404错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-500.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										500错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="grid.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										网格
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="blank.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										空白页面
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
 
 					</ul><!-- /.nav-list -->
 
@@ -1352,7 +1060,7 @@
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
@@ -1360,11 +1068,11 @@
 
 							<li>
 
-								<a href="#">UI Elements</a>
+								<a href="#">便捷通道</a>
 
 							</li>
 
-							<li class="active">jQuery UI</li>
+							<li class="active">找群团</li>
 
 						</ul><!-- .breadcrumb -->
 
@@ -1376,7 +1084,7 @@
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1396,13 +1104,13 @@
 
 							<h1>
 
-								jQuery UI
+								找群团
 
 								<small>
 
 									<i class="icon-double-angle-right"></i>
 
-									Restyling jQuery UI Widgets and Elements
+									群团信息
 
 								</small>
 
@@ -1411,8 +1119,7 @@
 						</div><!-- /.page-header -->
 
 
-
-						<div class="row">
+                          <div class="row">
 
 							<div class="col-xs-12">
 
@@ -1420,685 +1127,37 @@
 
 
 
-								<div class="row">
+								<div class="alert alert-info">
 
-									<div class="col-sm-6">
+									<i class="icon-hand-right"></i>
 
-										<h3 class="header blue lighter smaller">
 
-											<i class="icon-calendar-empty smaller-90"></i>
 
-											Datepicker
+									您的数据可能会提交到系统后台，请谨慎操作。
 
-										</h3>
+									<button class="close" data-dismiss="alert">
 
+										<i class="icon-remove"></i>
 
+									</button>
 
-										<div class="row">
+								</div>
 
-											<div class="col-xs-6">
 
-												<div class="input-group input-group-sm">
 
-													<input type="text" id="datepicker" class="form-control" />
+								<table id="grid-table"></table>
 
-													<span class="input-group-addon">
 
-														<i class="icon-calendar"></i>
 
-													</span>
+								<div id="grid-pager"></div>
 
-												</div>
 
-											</div>
 
-										</div>
+								<script type="text/javascript">
 
-									</div><!-- ./span -->
+									var $path_base = "/";//this will be used in gritter alerts containing images
 
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-list-alt smaller-90"></i>
-
-											Dialogs
-
-										</h3>
-
-										<a href="#" id="id-btn-dialog2" class="btn btn-info btn-sm">Confirm Dialog</a>
-
-										<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-sm">Modal Dialog</a>
-
-
-
-										<div id="dialog-message" class="hide">
-
-											<p>
-
-												This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.
-
-											</p>
-
-
-
-											<div class="hr hr-12 hr-double"></div>
-
-
-
-											<p>
-
-												Currently using
-
-												<b>36% of your storage space</b>
-
-												.
-
-											</p>
-
-										</div><!-- #dialog-message -->
-
-
-
-										<div id="dialog-confirm" class="hide">
-
-											<div class="alert alert-info bigger-110">
-
-												These items will be permanently deleted and cannot be recovered.
-
-											</div>
-
-
-
-											<div class="space-6"></div>
-
-
-
-											<p class="bigger-110 bolder center grey">
-
-												<i class="icon-hand-right blue bigger-120"></i>
-
-												Are you sure?
-
-											</p>
-
-										</div><!-- #dialog-confirm -->
-
-									</div><!-- ./span -->
-
-								</div><!-- ./row-fluid -->
-
-
-
-								<div class="space-12"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-terminal smaller-90"></i>
-
-											Autocomplete
-
-										</h3>
-
-
-
-										<div class="row">
-
-											<div class="col-sm-8 col-md-7">
-
-												<input id="tags" type="text" class="form-control" />
-
-												<div class="space-4"></div>
-
-
-
-												<input id="search" type="text" class="form-control" placeholder="Type 'a' or 'h'" />
-
-											</div>
-
-										</div>
-
-
-
-										<div class="row">
-
-											<div class="col-xs-12">
-
-												<h3 class="header blue lighter smaller">
-
-													<i class="icon-info smaller-90"></i>
-
-													Tooltip
-
-												</h3>
-
-
-
-												<div class="bigger-110">
-
-													<p>
-
-														<a class="grey" id="show-option" href="#" title="slide down on show">
-
-															<i class="icon-hand-right"></i>
-
-															slide down on show
-
-														</a>
-
-													</p>
-
-
-
-													<p>
-
-														<a class="blue" id="hide-option" href="#" title="explode on hide">
-
-															<i class="icon-hand-right"></i>
-
-															explode on hide
-
-														</a>
-
-													</p>
-
-
-
-													<p>
-
-														<a class="pink" id="open-event" href="#" title="move down on show">
-
-															<i class="icon-hand-right"></i>
-
-															move down on show
-
-														</a>
-
-													</p>
-
-												</div>
-
-											</div>
-
-										</div><!-- ./row-fluid -->
-
-									</div><!-- ./span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-reorder smaller-90"></i>
-
-											Menu
-
-										</h3>
-
-
-
-										<ul id="menu">
-
-											<li class="ui-state-disabled">
-
-												<a href="#">Aberdeen</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Ada</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Adamsville</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Addyston</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Delphi</a>
-
-
-
-												<ul>
-
-													<li class="ui-state-disabled">
-
-														<a href="#">Ada</a>
-
-													</li>
-
-
-
-													<li>
-
-														<a href="#">Saarland</a>
-
-													</li>
-
-
-
-													<li>
-
-														<a href="#">Salzburg</a>
-
-													</li>
-
-												</ul>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Saarland</a>
-
-											</li>
-
-
-
-											<li>
-
-												<a href="#">Salzburg</a>
-
-
-
-												<ul>
-
-													<li>
-
-														<a href="#">Delphi</a>
-
-
-
-														<ul>
-
-															<li>
-
-																<a href="#">Ada</a>
-
-															</li>
-
-
-
-															<li>
-
-																<a href="#">Saarland</a>
-
-															</li>
-
-
-
-															<li>
-
-																<a href="#">Salzburg</a>
-
-															</li>
-
-														</ul>
-
-													</li>
-
-
-
-													<li>
-
-														<a href="#">Delphi</a>
-
-
-
-														<ul>
-
-															<li>
-
-																<a href="#">Ada</a>
-
-															</li>
-
-
-
-															<li>
-
-																<a href="#">Saarland</a>
-
-															</li>
-
-
-
-															<li>
-
-																<a href="#">Salzburg</a>
-
-															</li>
-
-														</ul>
-
-													</li>
-
-
-
-													<li>
-
-														<a href="#">Perch</a>
-
-													</li>
-
-												</ul>
-
-											</li>
-
-
-
-											<li class="ui-state-disabled">
-
-												<a href="#">Amesville</a>
-
-											</li>
-
-										</ul>
-
-									</div><!-- ./span -->
-
-								</div><!-- ./row-fluid -->
-
-
-
-								<div class="space-12"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-retweet smaller-90"></i>
-
-											Spinner
-
-										</h3>
-
-
-
-										<input id="spinner" name="value" type="text" />
-
-									</div><!-- ./span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-resize-horizontal smaller-90"></i>
-
-											Slider
-
-										</h3>
-
-
-
-										<p>
-
-											Please see
-
-											<a href="form-elements.html">form elements page</a>
-
-											for more slider examples.
-
-										</p>
-
-
-
-										<div class="space-4"></div>
-
-
-
-										<div id="slider"></div>
-
-									</div><!-- ./span -->
-
-								</div><!-- ./row-fluid -->
-
-
-
-								<div class="space-12"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-list smaller-90"></i>
-
-											Sortable Accordion
-
-										</h3>
-
-
-
-										<div id="accordion" class="accordion-style2">
-
-											<div class="group">
-
-												<h3 class="accordion-header">Section 1</h3>
-
-
-
-												<div>
-
-													<p>
-
-														Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-
-			ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-
-			amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-
-			odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-
-													</p>
-
-												</div>
-
-											</div>
-
-
-
-											<div class="group">
-
-												<h3 class="accordion-header">Section 2</h3>
-
-
-
-												<div>
-
-													<p>
-
-														Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-
-			purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-
-			velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-
-			suscipit faucibus urna.
-
-													</p>
-
-												</div>
-
-											</div>
-
-
-
-											<div class="group">
-
-												<h3 class="accordion-header">Section 3</h3>
-
-
-
-												<div>
-
-													<p>
-
-														Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-
-			Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-
-			ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-
-			lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-
-													</p>
-
-
-
-													<ul>
-
-														<li>List item one</li>
-
-														<li>List item two</li>
-
-														<li>List item three</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div><!-- #accordion -->
-
-									</div><!-- ./span -->
-
-
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-folder-close-alt smaller-90"></i>
-
-											Tabs
-
-										</h3>
-
-
-
-										<div id="tabs">
-
-											<ul>
-
-												<li>
-
-													<a href="#tabs-1">Nunc tincidunt</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#tabs-2">Proin dolor</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#tabs-3">Aenean lacinia</a>
-
-												</li>
-
-											</ul>
-
-
-
-											<div id="tabs-1">
-
-												<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Duis orci. Aliquam sodales tortor vitae ipsum. Ut et mauris vel pede varius sollicitudin.</p>
-
-											</div>
-
-
-
-											<div id="tabs-2">
-
-												<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla..</p>
-
-											</div>
-
-
-
-											<div id="tabs-3">
-
-												<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Praesent eu risus hendrerit ligula tempus pretium.</p>
-
-											</div>
-
-										</div>
-
-									</div><!-- ./span -->
-
-								</div><!-- ./row-fluid -->
-
-
-
-								<div class="space-12"></div>
-
-
-
-								<div class="row">
-
-									<div class="col-sm-6">
-
-										<h3 class="header blue lighter smaller">
-
-											<i class="icon-spinner"></i>
-
-											Progressbar
-
-										</h3>
-
-
-
-										<div id="progressbar"></div>
-
-									</div><!-- ./span -->
-
-								</div><!-- ./row-fluid -->
+								</script>
 
 
 
@@ -2108,6 +1167,7 @@
 
 						</div><!-- /.row -->
 
+						
 					</div><!-- /.page-content -->
 
 				</div><!-- /.main-content -->
@@ -2295,7 +1355,19 @@
 		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 
 
+        <!-- page specific plugin scripts -->
 
+
+
+		<script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+
+		<script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+
+		<script src="assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+
+
+
+		<!-- ace scripts -->
 		<!-- ace scripts -->
 
 
@@ -2799,6 +1871,627 @@
 				});
 
 					
+
+			});
+
+		</script>
+        <script type="text/javascript">
+           //表格数据
+			var grid_data = 
+
+			[ 
+
+				{id:"1",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"2",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"3",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"4",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"5",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"7",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"8",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"9",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"10",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"11",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"12",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"13",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"14",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"15",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"16",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"17",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"18",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"19",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"20",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"21",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"22",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"23",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"}
+
+			];	
+
+			
+
+			jQuery(function($) {
+
+				var grid_selector = "#grid-table";
+
+				var pager_selector = "#grid-pager";
+
+			
+
+				jQuery(grid_selector).jqGrid({
+
+					//direction: "rtl",
+
+					
+
+					data: grid_data,
+
+					datatype: "local",
+
+					height: 250,
+
+					colNames:[' ', 'ID','群团描述','全团人数', '入群状态', '了解渠道','备注'],
+
+					colModel:[
+
+						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+
+							formatter:'actions', 
+
+							formatoptions:{ 
+
+								keys:true,
+
+								
+
+								delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
+
+								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+
+							}
+
+						},
+
+						{name:'id',index:'id', width:60, sorttype:"int", editable: true},
+
+						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+
+						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
+
+						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+
+						{name:'note',index:'note', width:150, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
+
+					], 
+
+			
+
+					viewrecords : true,
+
+					rowNum:10,
+
+					rowList:[10,20,30],
+
+					pager : pager_selector,
+
+					altRows: true,
+
+					//toppager: true,
+
+					
+
+					multiselect: true,
+
+					//multikey: "ctrlKey",
+
+			        multiboxonly: true,
+
+			
+
+					loadComplete : function() {
+
+						var table = this;
+
+						setTimeout(function(){
+
+							styleCheckbox(table);
+
+							
+
+							updateActionIcons(table);
+
+							updatePagerIcons(table);
+
+							enableTooltips(table);
+
+						}, 0);
+
+					},
+
+			
+
+					editurl: $path_base+"/dummy.html",//nothing is saved
+
+					caption: "群团信息一览",
+
+			
+
+			
+
+					autowidth: true
+
+			
+
+				});
+
+			
+
+				//enable search/filter toolbar
+
+				//jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+
+			
+
+				//switch element when editing inline
+
+				function aceSwitch( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=checkbox]')
+
+								.wrap('<label class="inline" />')
+
+							.addClass('ace ace-switch ace-switch-5')
+
+							.after('<span class="lbl"></span>');
+
+					}, 0);
+
+				}
+
+				//enable datepicker
+
+				function pickDate( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=text]')
+
+								.datepicker({format:'yyyy-mm-dd' , autoclose:true}); 
+
+					}, 0);
+
+				}
+
+			
+
+			
+
+				//navButtons
+
+				jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+
+					{ 	//navbar options
+
+						edit: true,
+
+						editicon : 'icon-pencil blue',
+
+						add: true,
+
+						addicon : 'icon-plus-sign purple',
+
+						del: true,
+
+						delicon : 'icon-trash red',
+
+						search: true,
+
+						searchicon : 'icon-search orange',
+
+						refresh: true,
+
+						refreshicon : 'icon-refresh green',
+
+						view: true,
+
+						viewicon : 'icon-zoom-in grey',
+
+					},
+
+					{
+
+						//edit record form
+
+						//closeAfterEdit: true,
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//new record form
+
+						closeAfterAdd: true,
+
+						recreateForm: true,
+
+						viewPagerButtons: false,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//delete record form
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							if(form.data('styled')) return false;
+
+							
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_delete_form(form);
+
+							
+
+							form.data('styled', true);
+
+						},
+
+						onClick : function(e) {
+
+							alert(1);
+
+						}
+
+					},
+
+					{
+
+						//search form
+
+						recreateForm: true,
+
+						afterShowSearch: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+							style_search_form(form);
+
+						},
+
+						afterRedraw: function(){
+
+							style_search_filters($(this));
+
+						}
+
+						,
+
+						multipleSearch: true,
+
+						/**
+
+						multipleGroup:true,
+
+						showQuery: true
+
+						*/
+
+					},
+
+					{
+
+						//view record form
+
+						recreateForm: true,
+
+						beforeShowForm: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+						}
+
+					}
+
+				)
+
+			
+
+			
+
+				
+
+				function style_edit_form(form) {
+
+					//enable datepicker on "sdate" field and switches for "stock" field
+
+					form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+
+						.end().find('input[name=stock]')
+
+							  .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+			
+
+					//update buttons classes
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+					
+
+					buttons = form.next().find('.navButton a');
+
+					buttons.find('.ui-icon').remove();
+
+					buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+
+					buttons.eq(1).append('<i class="icon-chevron-right"></i>');		
+
+				}
+
+			
+
+				function style_delete_form(form) {
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+				}
+
+				
+
+				function style_search_filters(form) {
+
+					form.find('.delete-rule').val('X');
+
+					form.find('.add-rule').addClass('btn btn-xs btn-primary');
+
+					form.find('.add-group').addClass('btn btn-xs btn-success');
+
+					form.find('.delete-group').addClass('btn btn-xs btn-danger');
+
+				}
+
+				function style_search_form(form) {
+
+					var dialog = form.closest('.ui-jqdialog');
+
+					var buttons = dialog.find('.EditTable')
+
+					buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+
+					buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+
+					buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+
+				}
+
+				
+
+				function beforeDeleteCallback(e) {
+
+					var form = $(e[0]);
+
+					if(form.data('styled')) return false;
+
+					
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_delete_form(form);
+
+					
+
+					form.data('styled', true);
+
+				}
+
+				
+
+				function beforeEditCallback(e) {
+
+					var form = $(e[0]);
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_edit_form(form);
+
+				}
+
+			
+
+			
+
+			
+
+				//it causes some flicker when reloading or navigating grid
+
+				//it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+
+				//or go back to default browser checkbox styles for the grid
+
+				function styleCheckbox(table) {
+
+				/**
+
+					$(table).find('input:checkbox').addClass('ace')
+
+					.wrap('<label />')
+
+					.after('<span class="lbl align-top" />')
+
+			
+
+			
+
+					$('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+
+					.find('input.cbox[type=checkbox]').addClass('ace')
+
+					.wrap('<label />').after('<span class="lbl align-top" />');
+
+				*/
+
+				}
+
+				
+
+			
+
+				//unlike navButtons icons, action icons in rows seem to be hard-coded
+
+				//you can change them like this in here if you want
+
+				function updateActionIcons(table) {
+
+					/**
+
+					var replacement = 
+
+					{
+
+						'ui-icon-pencil' : 'icon-pencil blue',
+
+						'ui-icon-trash' : 'icon-trash red',
+
+						'ui-icon-disk' : 'icon-ok green',
+
+						'ui-icon-cancel' : 'icon-remove red'
+
+					};
+
+					$(table).find('.ui-pg-div span.ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+					*/
+
+				}
+
+				
+
+				//replace icons with FontAwesome icons like above
+
+				function updatePagerIcons(table) {
+
+					var replacement = 
+
+					{
+
+						'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+
+						'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+
+						'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+
+						'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+
+					};
+
+					$('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+				}
+
+			
+
+				function enableTooltips(table) {
+
+					$('.navtable .ui-pg-button').tooltip({container:'body'});
+
+					$(table).find('.ui-pg-div').tooltip({container:'body'});
+
+				}
+
+			
+
+				//var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+
+			
+
+			
 
 			});
 

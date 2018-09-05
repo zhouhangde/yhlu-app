@@ -3,95 +3,34 @@
 <html lang="en">
 
 	<head>
-
 		<meta charset="utf-8" />
-
-		<title>文字排版 - Bootstrap后台管理系统模版Ace下载</title>
-
-		 
-
+		<title>用户信息管理</title>		 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
 		<!-- basic styles -->
-
-
-
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
 		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css">
-
-
-
 		<!--[if IE 7]>
-
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- page specific plugin styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/prettify.css" />
-
-
-
-		<!-- fonts -->
-
-
-
-		 
-
-
-
+		<link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
+		<!-- fonts -->		
 		<!-- ace styles -->
-
-
-
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
-
-
-
 		<!--[if lte IE 8]>
-
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
-
 		<![endif]-->
-
-
-
 		<!-- inline styles related to this page -->
-
-
-
 		<!-- ace settings handler -->
-
-
-
 		<script src="assets/js/ace-extra.min.js"></script>
-
-
-
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-
-
 		<!--[if lt IE 9]>
-
 		<script src="assets/js/html5shiv.js"></script>
-
 		<script src="assets/js/respond.min.js"></script>
-
 		<![endif]-->
-
 	</head>
 
 
@@ -118,7 +57,7 @@
 
 							<i class="icon-leaf"></i>
 
-							Ace Admin
+							宇航论坛后台管理系统
 
 						</small>
 
@@ -580,7 +519,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -594,7 +533,7 @@
 
 										<i class="icon-user"></i>
 
-										Profile
+										个人资料
 
 									</a>
 
@@ -608,11 +547,11 @@
 
 								<li>
 
-									<a href="#">
+									<a href="login.html">
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -720,15 +659,16 @@
 
 					</div><!-- #sidebar-shortcuts -->
 
-<ul class="nav nav-list">
+                        <!--手风琴下拉菜单-->
+					<ul class="nav nav-list">
 
-						<li>
+						<li class="active">
 
 							<a href="index.html">
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 控制台 </span>
+								<span class="menu-text"> 服务台 </span>
 
 							</a>
 
@@ -736,13 +676,13 @@
 
 
 
-						<li class="active">
+						<li>
 
 							<a href="typography.html">
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 用户信息管理 </span>
 
 							</a>
 
@@ -756,7 +696,7 @@
 
 								<i class="icon-desktop"></i>
 
-								<span class="menu-text"> UI 组件 </span>
+								<span class="menu-text"> 帖子管理 </span>
 
 
 
@@ -774,7 +714,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										组件
+										根帖信息管理
 
 									</a>
 
@@ -788,7 +728,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										按钮 &amp; 图表
+										回复帖子信息管理
 
 									</a>
 
@@ -802,21 +742,31 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										树菜单
+										版面信息管理
+
+									</a>
+
+								</li>
+                                <li>
+
+									<a href="wuye.html">
+
+										<i class="icon-double-angle-right"></i>
+
+										论坛类别信息管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
+								<!--<li>
 
 									<a href="jquery-ui.html">
 
 										<i class="icon-double-angle-right"></i>
 
-										jQuery UI
+										找群团
 
 									</a>
 
@@ -830,98 +780,15 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										可拖拽列表
+										志愿服务
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
-								<li>
-
-									<a href="#" class="dropdown-toggle">
-
-										<i class="icon-double-angle-right"></i>
-
-
-
-										三级菜单
-
-										<b class="arrow icon-angle-down"></b>
-
-									</a>
-
-
-
-									<ul class="submenu">
-
-										<li>
-
-											<a href="#">
-
-												<i class="icon-leaf"></i>
-
-												第一级
-
-											</a>
-
-										</li>
-
-
-
-										<li>
-
-											<a href="#" class="dropdown-toggle">
-
-												<i class="icon-pencil"></i>
-
-
-
-												第四级
-
-												<b class="arrow icon-angle-down"></b>
-
-											</a>
-
-
-
-											<ul class="submenu">
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-plus"></i>
-
-														添加产品
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-eye-open"></i>
-
-														查看商品
-
-													</a>
-
-												</li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
-
+								
 							</ul>
 
 						</li>
@@ -934,7 +801,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 前台页面管理 </span>
 
 
 
@@ -952,7 +819,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										简单 &amp; 动态
+										头部菜单管理
 
 									</a>
 
@@ -966,7 +833,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										论坛模板图管理
 
 									</a>
 
@@ -984,7 +851,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 表单 </span>
+								<span class="menu-text"> 附件管理 </span>
 
 
 
@@ -1002,25 +869,13 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										表单组件
+										公告管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
-
-									<a href="form-wizard.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										向导提示 &amp; 验证
-
-									</a>
-
-								</li>
 
 
 
@@ -1062,7 +917,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1080,13 +935,8 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>
 
 								</span>
 
@@ -1096,223 +946,20 @@
 
 
 
-						<li>
+						<!--<li>
 
 							<a href="gallery.html">
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
-						</li>
+						</li>-->
 
 
 
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-tag"></i>
-
-								<span class="menu-text"> 更多页面 </span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="profile.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										用户信息
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="inbox.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										收件箱
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="pricing.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										售价单
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="invoice.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										购物车
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="timeline.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										时间轴
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="login.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										登录 &amp; 注册
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
-
-
-
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-file-alt"></i>
-
-
-
-								<span class="menu-text">
-
-									其他页面
-
-									<span class="badge badge-primary ">5</span>
-
-								</span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="faq.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										帮助
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-404.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										404错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-500.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										500错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="grid.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										网格
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="blank.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										空白页面
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
 
 					</ul><!-- /.nav-list -->
 
@@ -1354,11 +1001,11 @@
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
-							<li class="active">Typography</li>
+							<li class="active">用户信息管理</li>
 
 						</ul><!-- .breadcrumb -->
 
@@ -1370,7 +1017,7 @@
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1390,23 +1037,22 @@
 
 							<h1>
 
-								Typography
+								用户信息管理
 
-								<small>
+								<!--<small>
 
 									<i class="icon-double-angle-right"></i>
 
 									This is page-header (.page-header &gt; h1)
 
-								</small>
+								</small>-->
 
 							</h1>
 
 						</div><!-- /.page-header -->
 
 
-
-						<div class="row">
+                        <div class="row">
 
 							<div class="col-xs-12">
 
@@ -1414,559 +1060,41 @@
 
 
 
-								<div class="row">
+								<div class="alert alert-info">
 
-									<div class="col-sm-6">
+									<i class="icon-hand-right"></i>
 
-										<h4>Headings & Paragraphs</h4>
 
 
+									您的数据可能会提交到系统后台，请谨慎操作。
 
-										<hr />
+									<button class="close" data-dismiss="alert">
 
-										<h1>h1. Heading 1</h1>
+										<i class="icon-remove"></i>
 
-										<p class="lead">
-
-											Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-
-										</p>
-
-										<h2>h2. Heading 2</h2>
-
-										<p>
-
-											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
-
-										</p>
-
-										<h3>h3. Heading 3</h3>
-
-										<p>
-
-											Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-
-										</p>
-
-										<h4>h4. Heading 4</h4>
-
-										<h5>h5. Heading 5</h5>
-
-										<h6>h6. Heading 6</h6>
-
-									</div><!-- /span -->
-
-
-
-									<div class="col-sm-6">
-
-										<div class="widget-box">
-
-											<div class="widget-header widget-header-flat">
-
-												<h4>Lists</h4>
-
-											</div>
-
-
-
-											<div class="widget-body">
-
-												<div class="widget-main">
-
-													<div class="row">
-
-														<div class="col-sm-6">
-
-															<ul>
-
-																<li>Unordered List Item</li>
-
-
-
-																<li>
-
-																	<small>List Item in small tag</small>
-
-																</li>
-
-
-
-																<li>
-
-																	<b>List Item in bold tag</b>
-
-																</li>
-
-
-
-																<li>
-
-																	<i>List Item in italics tag</i>
-
-																</li>
-
-
-
-																<li>
-
-																	<ul class="list-unstyled">
-
-																		<li>
-
-																			<i class="icon-caret-right blue"></i>
-
-																			Nested List Item
-
-																		</li>
-
-
-
-																		<li>
-
-																			<i class="icon-caret-right blue"></i>
-
-																			Nested List Item
-
-																		</li>
-
-
-
-																		<li>
-
-																			<i class="icon-caret-right blue"></i>
-
-																			Nested List Item
-
-																		</li>
-
-																	</ul>
-
-																</li>
-
-																<li>Unordered List Item which is a longer item and may break into more lines.</li>
-
-
-
-																<li>
-
-																	<strong>List Item in strong tag</strong>
-
-																</li>
-
-
-
-																<li>
-
-																	<em>List Item in emphasis tag</em>
-
-																</li>
-
-															</ul>
-
-														</div>
-
-
-
-														<div class="col-sm-6">
-
-															<ol>
-
-																<li>Ordered List Item</li>
-
-																<li class="text-primary">.text-primary Ordered List Item</li>
-
-																<li class="text-danger">.text-danger Ordered List Item</li>
-
-
-
-																<li class="text-success">
-
-																	<b>.text-success</b>
-
-																	Ordered List Item
-
-																</li>
-
-																<li class="text-warning">.text-warning Ordered List Item</li>
-
-																<li class="text-muted">.text-muted Ordered List Item</li>
-
-															</ol>
-
-														</div>
-
-													</div>
-
-
-
-													<hr />
-
-													<div class="row">
-
-														<div class="col-xs-12">
-
-															<ul class="list-unstyled spaced">
-
-																<li>
-
-																	<i class="icon-bell bigger-110 purple"></i>
-
-																	List with custom icons and more space
-
-																</li>
-
-
-
-																<li>
-
-																	<i class="icon-ok bigger-110 green"></i>
-
-																	Unordered List Item # 2
-
-																</li>
-
-
-
-																<li>
-
-																	<i class="icon-remove bigger-110 red"></i>
-
-																	Unordered List Item # 3
-
-																</li>
-
-															</ul>
-
-
-
-															<ul class="list-unstyled spaced2">
-
-																<li>
-
-																	<i class="icon-circle green"></i>
-
-																	Even more space
-
-																</li>
-
-
-
-																<li class="text-warning bigger-110 orange">
-
-																	<i class="icon-warning-sign"></i>
-
-																	Unordered List Item # 5
-
-																</li>
-
-
-
-																<li class="muted">
-
-																	<i class="icon-angle-right bigger-110"></i>
-
-																	Unordered List Item # 6
-
-																</li>
-
-
-
-																<li>
-
-																	<ul class="list-inline">
-
-																		<li>
-
-																			<i class="icon-share-alt green bigger-110"></i>
-
-																			Inline List Item # 1
-
-																		</li>
-
-																		<li>List Item # 2</li>
-
-																		<li>List Item # 3</li>
-
-																	</ul>
-
-																</li>
-
-															</ul>
-
-														</div>
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div><!-- /span -->
+									</button>
 
 								</div>
 
 
 
-								<hr />
+								<table id="grid-table"></table>
 
-								<div class="row">
 
-									<div class="col-sm-4">
 
-										<div class="widget-box">
+								<div id="grid-pager"></div>
 
-											<div class="widget-header widget-header-flat">
 
-												<h4 class="smaller">
 
-													<i class="icon-quote-left smaller-80"></i>
+								<script type="text/javascript">
 
-													BlockQuote & Address
+									var $path_base = "/";//this will be used in gritter alerts containing images
 
-												</h4>
+								</script>
 
-											</div>
 
 
-
-											<div class="widget-body">
-
-												<div class="widget-main">
-
-													<div class="row">
-
-														<div class="col-xs-12">
-
-															<blockquote class="pull-right">
-
-																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-
-
-																<small>
-
-																	Someone famous
-
-																	<cite title="Source Title">Source Title</cite>
-
-																</small>
-
-															</blockquote>
-
-														</div>
-
-													</div>
-
-
-
-													<div class="row">
-
-														<div class="col-xs-12">
-
-															<blockquote>
-
-																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-
-
-																<small>
-
-																	Someone famous
-
-																	<cite title="Source Title">Source Title</cite>
-
-																</small>
-
-															</blockquote>
-
-														</div>
-
-													</div>
-
-
-
-													<hr />
-
-													<address>
-
-														<strong>Twitter, Inc.</strong>
-
-
-
-														<br />
-
-														795 Folsom Ave, Suite 600
-
-														<br />
-
-														San Francisco, CA 94107
-
-														<br />
-
-														<abbr title="Phone">P:</abbr>
-
-														(123) 456-7890
-
-													</address>
-
-
-
-													<address>
-
-														<strong>Full Name</strong>
-
-
-
-														<br />
-
-														<a href="mailto:#">first.last@example.com</a>
-
-													</address>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-
-
-									<div class="col-sm-8">
-
-										<div class="row">
-
-											<div class="col-xs-12">
-
-												<div class="widget-box">
-
-													<div class="widget-header widget-header-flat">
-
-														<h4 class="smaller">Definition List</h4>
-
-
-
-														<div class="widget-toolbar">
-
-															<label>
-
-																<small class="green">
-
-																	<b>Horizontal</b>
-
-																</small>
-
-
-
-																<input id="id-check-horizontal" type="checkbox" class="ace ace-switch ace-switch-6" />
-
-																<span class="lbl"></span>
-
-															</label>
-
-														</div>
-
-													</div>
-
-
-
-													<div class="widget-body">
-
-														<div class="widget-main">
-
-															<code class="pull-right" id="dt-list-code">&lt;dl&gt;</code>
-
-
-
-															<dl id="dt-list-1">
-
-																<dt>Description lists</dt>
-
-																<dd>A description list is perfect for defining terms.</dd>
-
-																<dt>Euismod</dt>
-
-																<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-
-																<dd>Donec id elit non mi porta gravida at eget metus.</dd>
-
-																<dt>Malesuada porta</dt>
-
-																<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-
-																<dt>Felis euismod semper eget lacinia</dt>
-
-																<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-
-															</dl>
-
-														</div>
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-
-
-										<div class="space-6"></div>
-
-
-
-										<div class="row">
-
-											<div class="col-xs-12">
-
-												<div class="widget-box">
-
-													<div class="widget-header widget-header-flat">
-
-														<h4 class="smaller">
-
-															<i class="icon-code"></i>
-
-															Code view
-
-														</h4>
-
-													</div>
-
-
-
-													<div class="widget-body">
-
-														<div class="widget-main">
-
-															<pre class="prettyprint linenums">&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;
-
-&lt;p class="text-warning"&gt;Etiam porta sem malesuada.&lt;/p&gt;
-
-&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
-
-&lt;p class="text-info"&gt;Aenean eu leo quam.&lt;/p&gt;
-
-&lt;p class="text-success"&gt;Duis mollis.&lt;/p&gt;</pre>
-
-														</div>
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div><!-- PAGE CONTENT ENDS -->
+								<!-- PAGE CONTENT ENDS -->
 
 							</div><!-- /.col -->
 
@@ -2157,7 +1285,21 @@
 		<script src="assets/js/prettify.js"></script>
 
 
+         
+         <!--权限管理基础信息表格引入的js-->
+        <!-- page specific plugin scripts -->
 
+
+
+		<script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+
+		<script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+
+		<script src="assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+
+
+
+		<!-- ace scripts -->
 		<!-- ace scripts -->
 
 
@@ -2190,6 +1332,596 @@
 
 			})
 
+         //表格数据
+			var grid_data = 
+
+			[ 
+
+				{id:"1",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"2",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"3",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"4",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"5",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"}
+
+			];	
+
+			
+
+			jQuery(function($) {
+
+				var grid_selector = "#grid-table";
+
+				var pager_selector = "#grid-pager";
+
+			
+
+				jQuery(grid_selector).jqGrid({
+
+					//direction: "rtl",
+
+					
+
+					data: grid_data,
+
+					datatype: "local",
+
+					height: 250,
+
+					colNames:[' ', '用户ID','用户名','用户图像', '用户性别', '用户手机号','用户QQ','用户邮箱','用户来自何处','用户权限'],
+
+					colModel:[
+
+						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+
+							formatter:'actions', 
+
+							formatoptions:{ 
+
+								keys:true,
+
+								
+
+								delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
+
+								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+
+							}
+
+						},
+
+						{name:'id',index:'id', width:60, sorttype:"int", editable: true},
+
+						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+
+//						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
+                        {name:'name',index:'name', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+
+						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+                        {name:'note',index:'note', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+                        {name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+                        {name:'note',index:'note', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}}
+//						{name:'note',index:'note', width:150, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
+
+					], 
+
+			
+
+					viewrecords : true,
+
+					rowNum:10,
+
+					rowList:[10,20,30],
+
+					pager : pager_selector,
+
+					altRows: true,
+
+					//toppager: true,
+
+					
+
+					multiselect: true,
+
+					//multikey: "ctrlKey",
+
+			        multiboxonly: true,
+
+			
+
+					loadComplete : function() {
+
+						var table = this;
+
+						setTimeout(function(){
+
+							styleCheckbox(table);
+
+							
+
+							updateActionIcons(table);
+
+							updatePagerIcons(table);
+
+							enableTooltips(table);
+
+						}, 0);
+
+					},
+
+			
+
+					editurl: $path_base+"/dummy.html",//nothing is saved
+
+					caption: "用户基础信息",
+
+			
+
+			
+
+					autowidth: true
+
+			
+
+				});
+
+			
+
+				//enable search/filter toolbar
+
+				//jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+
+			
+
+				//switch element when editing inline
+
+				function aceSwitch( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=checkbox]')
+
+								.wrap('<label class="inline" />')
+
+							.addClass('ace ace-switch ace-switch-5')
+
+							.after('<span class="lbl"></span>');
+
+					}, 0);
+
+				}
+
+				//enable datepicker
+
+				function pickDate( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=text]')
+
+								.datepicker({format:'yyyy-mm-dd' , autoclose:true}); 
+
+					}, 0);
+
+				}
+
+			
+
+			
+
+				//navButtons
+
+				jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+
+					{ 	//navbar options
+
+						edit: true,
+
+						editicon : 'icon-pencil blue',
+
+						add: true,
+
+						addicon : 'icon-plus-sign purple',
+
+						del: true,
+
+						delicon : 'icon-trash red',
+
+						search: true,
+
+						searchicon : 'icon-search orange',
+
+						refresh: true,
+
+						refreshicon : 'icon-refresh green',
+
+						view: true,
+
+						viewicon : 'icon-zoom-in grey',
+
+					},
+
+					{
+
+						//edit record form
+
+						//closeAfterEdit: true,
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//new record form
+
+						closeAfterAdd: true,
+
+						recreateForm: true,
+
+						viewPagerButtons: false,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//delete record form
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							if(form.data('styled')) return false;
+
+							
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_delete_form(form);
+
+							
+
+							form.data('styled', true);
+
+						},
+
+						onClick : function(e) {
+
+							alert(1);
+
+						}
+
+					},
+
+					{
+
+						//search form
+
+						recreateForm: true,
+
+						afterShowSearch: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+							style_search_form(form);
+
+						},
+
+						afterRedraw: function(){
+
+							style_search_filters($(this));
+
+						}
+
+						,
+
+						multipleSearch: true,
+
+						/**
+
+						multipleGroup:true,
+
+						showQuery: true
+
+						*/
+
+					},
+
+					{
+
+						//view record form
+
+						recreateForm: true,
+
+						beforeShowForm: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+						}
+
+					}
+
+				)
+
+			
+
+			
+
+				
+
+				function style_edit_form(form) {
+
+					//enable datepicker on "sdate" field and switches for "stock" field
+
+					form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+
+						.end().find('input[name=stock]')
+
+							  .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+			
+
+					//update buttons classes
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+					
+
+					buttons = form.next().find('.navButton a');
+
+					buttons.find('.ui-icon').remove();
+
+					buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+
+					buttons.eq(1).append('<i class="icon-chevron-right"></i>');		
+
+				}
+
+			
+
+				function style_delete_form(form) {
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+				}
+
+				
+
+				function style_search_filters(form) {
+
+					form.find('.delete-rule').val('X');
+
+					form.find('.add-rule').addClass('btn btn-xs btn-primary');
+
+					form.find('.add-group').addClass('btn btn-xs btn-success');
+
+					form.find('.delete-group').addClass('btn btn-xs btn-danger');
+
+				}
+
+				function style_search_form(form) {
+
+					var dialog = form.closest('.ui-jqdialog');
+
+					var buttons = dialog.find('.EditTable')
+
+					buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+
+					buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+
+					buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+
+				}
+
+				
+
+				function beforeDeleteCallback(e) {
+
+					var form = $(e[0]);
+
+					if(form.data('styled')) return false;
+
+					
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_delete_form(form);
+
+					
+
+					form.data('styled', true);
+
+				}
+
+				
+
+				function beforeEditCallback(e) {
+
+					var form = $(e[0]);
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_edit_form(form);
+
+				}
+
+			
+
+			
+
+			
+
+				//it causes some flicker when reloading or navigating grid
+
+				//it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+
+				//or go back to default browser checkbox styles for the grid
+
+				function styleCheckbox(table) {
+
+				/**
+
+					$(table).find('input:checkbox').addClass('ace')
+
+					.wrap('<label />')
+
+					.after('<span class="lbl align-top" />')
+
+			
+
+			
+
+					$('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+
+					.find('input.cbox[type=checkbox]').addClass('ace')
+
+					.wrap('<label />').after('<span class="lbl align-top" />');
+
+				*/
+
+				}
+
+				
+
+			
+
+				//unlike navButtons icons, action icons in rows seem to be hard-coded
+
+				//you can change them like this in here if you want
+
+				function updateActionIcons(table) {
+
+					/**
+
+					var replacement = 
+
+					{
+
+						'ui-icon-pencil' : 'icon-pencil blue',
+
+						'ui-icon-trash' : 'icon-trash red',
+
+						'ui-icon-disk' : 'icon-ok green',
+
+						'ui-icon-cancel' : 'icon-remove red'
+
+					};
+
+					$(table).find('.ui-pg-div span.ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+					*/
+
+				}
+
+				
+
+				//replace icons with FontAwesome icons like above
+
+				function updatePagerIcons(table) {
+
+					var replacement = 
+
+					{
+
+						'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+
+						'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+
+						'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+
+						'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+
+					};
+
+					$('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+				}
+
+			
+
+				function enableTooltips(table) {
+
+					$('.navtable .ui-pg-button').tooltip({container:'body'});
+
+					$(table).find('.ui-pg-div').tooltip({container:'body'});
+
+				}
+
+			
+
+				//var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+
+			
+
+			
+
+			});
+  
 		</script>
 
 	

@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8" />
 
-		<title>Full Calendar - Bootstrap后台管理系统模版Ace下载</title>
+		<title>宇航论坛后台管理系统</title>
 
 		 
 
@@ -36,10 +36,6 @@
 
 
 
-		<link rel="stylesheet" href="assets/css/fullcalendar.css" />
-
-
-
 		<!-- fonts -->
 
 
@@ -47,7 +43,7 @@
 		 
 
 
-
+        <link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
 		<!-- ace styles -->
 
 
@@ -118,7 +114,7 @@
 
 							<i class="icon-leaf"></i>
 
-							Ace Admin
+							宇航论坛后台管理系统
 
 						</small>
 
@@ -580,7 +576,7 @@
 
 										<i class="icon-cog"></i>
 
-										Settings
+										设置
 
 									</a>
 
@@ -594,7 +590,7 @@
 
 										<i class="icon-user"></i>
 
-										Profile
+										个人资料
 
 									</a>
 
@@ -612,7 +608,7 @@
 
 										<i class="icon-off"></i>
 
-										Logout
+										退出
 
 									</a>
 
@@ -722,6 +718,7 @@
 
 
 
+					<!--手风琴下拉菜单-->
 					<ul class="nav nav-list">
 
 						<li class="active">
@@ -730,7 +727,7 @@
 
 								<i class="icon-dashboard"></i>
 
-								<span class="menu-text"> 控制台 </span>
+								<span class="menu-text"> 服务台 </span>
 
 							</a>
 
@@ -744,7 +741,7 @@
 
 								<i class="icon-text-width"></i>
 
-								<span class="menu-text"> 文字排版 </span>
+								<span class="menu-text"> 用户信息管理 </span>
 
 							</a>
 
@@ -758,7 +755,7 @@
 
 								<i class="icon-desktop"></i>
 
-								<span class="menu-text"> UI 组件 </span>
+								<span class="menu-text"> 帖子管理 </span>
 
 
 
@@ -776,7 +773,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										组件
+										根帖信息管理
 
 									</a>
 
@@ -790,7 +787,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										按钮 &amp; 图表
+										回复帖子信息管理
 
 									</a>
 
@@ -804,21 +801,31 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										树菜单
+										版面信息管理
+
+									</a>
+
+								</li>
+                                <li>
+
+									<a href="wuye.html">
+
+										<i class="icon-double-angle-right"></i>
+
+										论坛类别信息管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
+								<!--<li>
 
 									<a href="jquery-ui.html">
 
 										<i class="icon-double-angle-right"></i>
 
-										jQuery UI
+										找群团
 
 									</a>
 
@@ -832,98 +839,15 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										可拖拽列表
+										志愿服务
 
 									</a>
 
-								</li>
+								</li>-->
 
 
 
-								<li>
-
-									<a href="#" class="dropdown-toggle">
-
-										<i class="icon-double-angle-right"></i>
-
-
-
-										三级菜单
-
-										<b class="arrow icon-angle-down"></b>
-
-									</a>
-
-
-
-									<ul class="submenu">
-
-										<li>
-
-											<a href="#">
-
-												<i class="icon-leaf"></i>
-
-												第一级
-
-											</a>
-
-										</li>
-
-
-
-										<li>
-
-											<a href="#" class="dropdown-toggle">
-
-												<i class="icon-pencil"></i>
-
-
-
-												第四级
-
-												<b class="arrow icon-angle-down"></b>
-
-											</a>
-
-
-
-											<ul class="submenu">
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-plus"></i>
-
-														添加产品
-
-													</a>
-
-												</li>
-
-
-
-												<li>
-
-													<a href="#">
-
-														<i class="icon-eye-open"></i>
-
-														查看商品
-
-													</a>
-
-												</li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
-
+								
 							</ul>
 
 						</li>
@@ -936,7 +860,7 @@
 
 								<i class="icon-list"></i>
 
-								<span class="menu-text"> 表格 </span>
+								<span class="menu-text"> 前台页面管理 </span>
 
 
 
@@ -954,7 +878,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										简单 &amp; 动态
+										头部菜单管理
 
 									</a>
 
@@ -968,7 +892,7 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										jqGrid plugin
+										论坛模板图管理
 
 									</a>
 
@@ -986,7 +910,7 @@
 
 								<i class="icon-edit"></i>
 
-								<span class="menu-text"> 表单 </span>
+								<span class="menu-text"> 附件管理 </span>
 
 
 
@@ -1004,25 +928,13 @@
 
 										<i class="icon-double-angle-right"></i>
 
-										表单组件
+										公告管理
 
 									</a>
 
 								</li>
 
 
-
-								<li>
-
-									<a href="form-wizard.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										向导提示 &amp; 验证
-
-									</a>
-
-								</li>
 
 
 
@@ -1064,7 +976,7 @@
 
 								<i class="icon-list-alt"></i>
 
-								<span class="menu-text"> 插件 </span>
+								<span class="menu-text"> 角色管理 </span>
 
 							</a>
 
@@ -1072,7 +984,7 @@
 
 
 
-						<li class="active">
+						<li>
 
 							<a href="calendar.html">
 
@@ -1082,13 +994,8 @@
 
 								<span class="menu-text">
 
-									日历
+									权限管理
 
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-
-										<i class="icon-warning-sign red bigger-130"></i>
-
-									</span>
 
 								</span>
 
@@ -1098,223 +1005,20 @@
 
 
 
-						<li>
+						<!--<li>
 
 							<a href="gallery.html">
 
 								<i class="icon-picture"></i>
 
-								<span class="menu-text"> 相册 </span>
+								<span class="menu-text"> 物业管理 </span>
 
 							</a>
 
-						</li>
+						</li>-->
 
 
 
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-tag"></i>
-
-								<span class="menu-text"> 更多页面 </span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="profile.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										用户信息
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="inbox.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										收件箱
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="pricing.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										售价单
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="invoice.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										购物车
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="timeline.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										时间轴
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="login.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										登录 &amp; 注册
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
-
-
-
-						<li>
-
-							<a href="#" class="dropdown-toggle">
-
-								<i class="icon-file-alt"></i>
-
-
-
-								<span class="menu-text">
-
-									其他页面
-
-									<span class="badge badge-primary ">5</span>
-
-								</span>
-
-
-
-								<b class="arrow icon-angle-down"></b>
-
-							</a>
-
-
-
-							<ul class="submenu">
-
-								<li>
-
-									<a href="faq.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										帮助
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-404.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										404错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="error-500.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										500错误页面
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="grid.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										网格
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a href="blank.html">
-
-										<i class="icon-double-angle-right"></i>
-
-										空白页面
-
-									</a>
-
-								</li>
-
-							</ul>
-
-						</li>
 
 					</ul><!-- /.nav-list -->
 
@@ -1356,11 +1060,19 @@
 
 								<i class="icon-home home-icon"></i>
 
-								<a href="#">Home</a>
+								<a href="#">主页</a>
 
 							</li>
 
-							<li class="active">Calendar</li>
+
+
+							<li>
+
+								<a href="#">权限管理</a>
+
+							</li>
+
+							<!--<li class="active">Treeview</li>-->
 
 						</ul><!-- .breadcrumb -->
 
@@ -1372,7 +1084,7 @@
 
 								<span class="input-icon">
 
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="搜索" class="nav-search-input" id="nav-search-input" autocomplete="off" />
 
 									<i class="icon-search nav-search-icon"></i>
 
@@ -1392,15 +1104,15 @@
 
 							<h1>
 
-								Full Calendar
+								权限管理
 
-								<small>
+								<!--<small>
 
 									<i class="icon-double-angle-right"></i>
 
-									with draggable and editable events
+									with selectable items(single &amp; multiple) and custom icons
 
-								</small>
+								</small>-->
 
 							</h1>
 
@@ -1414,29 +1126,32 @@
 
 								<!-- PAGE CONTENT BEGINS -->
 
-
+                                <div class="alert alert-info">
+	
+										<i class="icon-hand-right"></i>
+	
+	
+	
+										您的数据可能会提交到系统后台，请谨慎操作。
+	
+										<button class="close" data-dismiss="alert">
+	
+											<i class="icon-remove"></i>
+	
+										</button>
+	
+								</div>
+	
 
 								<div class="row">
 
-									<div class="col-sm-9">
+									<div class="col-sm-6">
 
-										<div class="space"></div>
+										<div class="widget-box">
 
+											<div class="widget-header header-color-blue2">
 
-
-										<div id="calendar"></div>
-
-									</div>
-
-
-
-									<div class="col-sm-3">
-
-										<div class="widget-box transparent">
-
-											<div class="widget-header">
-
-												<h4>Draggable events</h4>
+												<h4 class="lighter smaller">菜单分配</h4>
 
 											</div>
 
@@ -1444,89 +1159,9 @@
 
 											<div class="widget-body">
 
-												<div class="widget-main no-padding">
+												<div class="widget-main padding-8">
 
-													<div id="external-events">
-
-														<div class="external-event label-grey" data-class="label-grey">
-
-															<i class="icon-move"></i>
-
-															My Event 1
-
-														</div>
-
-
-
-														<div class="external-event label-success" data-class="label-success">
-
-															<i class="icon-move"></i>
-
-															My Event 2
-
-														</div>
-
-
-
-														<div class="external-event label-danger" data-class="label-danger">
-
-															<i class="icon-move"></i>
-
-															My Event 3
-
-														</div>
-
-
-
-														<div class="external-event label-purple" data-class="label-purple">
-
-															<i class="icon-move"></i>
-
-															My Event 4
-
-														</div>
-
-
-
-														<div class="external-event label-yellow" data-class="label-yellow">
-
-															<i class="icon-move"></i>
-
-															My Event 5
-
-														</div>
-
-
-
-														<div class="external-event label-pink" data-class="label-pink">
-
-															<i class="icon-move"></i>
-
-															My Event 6
-
-														</div>
-
-
-
-														<div class="external-event label-info" data-class="label-info">
-
-															<i class="icon-move"></i>
-
-															My Event 7
-
-														</div>
-
-
-
-														<label>
-
-															<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
-
-															<span class="lbl"> Remove after drop</span>
-
-														</label>
-
-													</div>
+													<div id="tree1" class="tree"></div>
 
 												</div>
 
@@ -1536,7 +1171,71 @@
 
 									</div>
 
+                                    <div class="col-xs-6">
+
+								<!-- PAGE CONTENT BEGINS -->
+
+
+
+									
+	
+	
+									<table id="grid-table"></table>
+	
+	
+	
+									<div id="grid-pager"></div>
+	
+	
+	
+									<script type="text/javascript">
+	
+										var $path_base = "/";//this will be used in gritter alerts containing images
+	
+									</script>
+	
+	
+	
+									<!-- PAGE CONTENT ENDS -->
+	
+								</div><!-- /.col -->
+
+
+									<!--<div class="col-sm-6">
+
+										<div class="widget-box">
+
+											<div class="widget-header header-color-green2">
+
+												<h4 class="lighter smaller">Browse Files</h4>
+
+											</div>
+
+
+
+											<div class="widget-body">
+
+												<div class="widget-main padding-8">
+
+													<div id="tree2" class="tree"></div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>-->
+
 								</div>
+
+
+
+								<script type="text/javascript">
+
+									var $assets = "assets";//this will be used in fuelux.tree-sampledata.js
+
+								</script>
 
 
 
@@ -1728,16 +1427,24 @@
 
 
 
-		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="assets/js/fuelux/data/fuelux.tree-sampledata.js"></script>
 
-		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-
-		<script src="assets/js/fullcalendar.min.js"></script>
-
-		<script src="assets/js/bootbox.min.js"></script>
+		<script src="assets/js/fuelux/fuelux.tree.min.js"></script>
 
 
+        <!-- page specific plugin scripts -->
 
+
+
+		<script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+
+		<script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+
+		<script src="assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+
+
+
+		<!-- ace scripts -->
 		<!-- ace scripts -->
 
 
@@ -1754,337 +1461,704 @@
 
 		<script type="text/javascript">
 
-			jQuery(function($) {
+			jQuery(function($){
 
 
 
-/* initialize the external events
+		$('#tree1').ace_tree({
 
-	-----------------------------------------------------------------*/
+			dataSource: treeDataSource ,
 
+			multiSelect:true,
 
+			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
 
-	$('#external-events div.external-event').each(function() {
+			'open-icon' : 'icon-minus',
 
+			'close-icon' : 'icon-plus',
 
+			'selectable' : true,
 
-		// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+			'selected-icon' : 'icon-ok',
 
-		// it doesn't need to have a start or end
-
-		var eventObject = {
-
-			title: $.trim($(this).text()) // use the element's text as the event title
-
-		};
-
-
-
-		// store the Event Object in the DOM element so we can get to it later
-
-		$(this).data('eventObject', eventObject);
-
-
-
-		// make the event draggable using jQuery UI
-
-		$(this).draggable({
-
-			zIndex: 999,
-
-			revert: true,      // will cause the event to go back to its
-
-			revertDuration: 0  //  original position after the drag
+			'unselected-icon' : 'icon-remove'
 
 		});
 
-		
-
-	});
 
 
+		$('#tree2').ace_tree({
 
+			dataSource: treeDataSource2 ,
 
+			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
 
+			'open-icon' : 'icon-folder-open',
 
+			'close-icon' : 'icon-folder-close',
 
+			'selectable' : false,
 
+			'selected-icon' : null,
 
-	/* initialize the calendar
+			'unselected-icon' : null
 
-	-----------------------------------------------------------------*/
-
-
-
-	var date = new Date();
-
-	var d = date.getDate();
-
-	var m = date.getMonth();
-
-	var y = date.getFullYear();
+		});
 
 
 
-	
 
-	var calendar = $('#calendar').fullCalendar({
 
-		 buttonText: {
 
-			prev: '<i class="icon-chevron-left"></i>',
 
-			next: '<i class="icon-chevron-right"></i>'
+		/**
 
-		},
+		$('#tree1').on('loaded', function (evt, data) {
 
-	
+		});
 
-		header: {
 
-			left: 'prev,next today',
 
-			center: 'title',
+		$('#tree1').on('opened', function (evt, data) {
 
-			right: 'month,agendaWeek,agendaDay'
+		});
 
-		},
 
-		events: [
 
-		{
+		$('#tree1').on('closed', function (evt, data) {
 
-			title: 'All Day Event',
+		});
 
-			start: new Date(y, m, 1),
 
-			className: 'label-important'
 
-		},
+		$('#tree1').on('selected', function (evt, data) {
 
-		{
+		});
 
-			title: 'Long Event',
+		*/
 
-			start: new Date(y, m, d-5),
+});
 
-			end: new Date(y, m, d-2),
+		</script>
+         <script type="text/javascript">
+           //表格数据
+			var grid_data = 
 
-			className: 'label-success'
+			[ 
 
-		},
+				{id:"1",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
 
-		{
+				{id:"2",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
 
-			title: 'Some Event',
+				{id:"3",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
 
-			start: new Date(y, m, d-3, 16, 0),
+				{id:"4",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
 
-			allDay: false
+				{id:"5",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
 
-		}]
+				{id:"6",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
 
-		,
+				{id:"7",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
 
-		editable: true,
+				{id:"8",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
 
-		droppable: true, // this allows things to be dropped onto the calendar !!!
+				{id:"9",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
 
-		drop: function(date, allDay) { // this function is called when something is dropped
+				{id:"10",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
 
-		
+				{id:"11",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
 
-			// retrieve the dropped element's stored Event Object
+				{id:"12",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
 
-			var originalEventObject = $(this).data('eventObject');
+				{id:"13",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"},
 
-			var $extraEventClass = $(this).attr('data-class');
+				{id:"14",name:"Laser Printer",note:"note2",stock:"Yes",ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"15",name:"Play Station",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"16",name:"Mobile Telephone",note:"note",stock:"Yes",ship:"ARAMEX",sdate:"2007-12-03"},
+
+				{id:"17",name:"Server",note:"note2",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"18",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"19",name:"Matrix Printer",note:"note3",stock:"No", ship:"FedEx",sdate:"2007-12-03"},
+
+				{id:"20",name:"Desktop Computer",note:"note",stock:"Yes",ship:"FedEx", sdate:"2007-12-03"},
+
+				{id:"21",name:"Laptop",note:"Long text ",stock:"Yes",ship:"InTime",sdate:"2007-12-03"},
+
+				{id:"22",name:"LCD Monitor",note:"note3",stock:"Yes",ship:"TNT",sdate:"2007-12-03"},
+
+				{id:"23",name:"Speakers",note:"note",stock:"No",ship:"ARAMEX",sdate:"2007-12-03"}
+
+			];	
 
 			
 
-			
+			jQuery(function($) {
 
-			// we need to copy it, so that multiple events don't have a reference to the same object
+				var grid_selector = "#grid-table";
 
-			var copiedEventObject = $.extend({}, originalEventObject);
-
-			
-
-			// assign it the date that was reported
-
-			copiedEventObject.start = date;
-
-			copiedEventObject.allDay = allDay;
-
-			if($extraEventClass) copiedEventObject['className'] = [$extraEventClass];
+				var pager_selector = "#grid-pager";
 
 			
 
-			// render the event on the calendar
+				jQuery(grid_selector).jqGrid({
 
-			// the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+					//direction: "rtl",
 
-			$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+					
 
-			
+					data: grid_data,
 
-			// is the "remove after drop" checkbox checked?
+					datatype: "local",
 
-			if ($('#drop-remove').is(':checked')) {
+					height: 250,
 
-				// if so, remove the element from the "Draggable Events" list
+					colNames:[' ', 'ID','角色名称', '启用状态', '主菜单名称','备注'],
 
-				$(this).remove();
+					colModel:[
 
-			}
+						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
 
-			
+							formatter:'actions', 
 
-		}
+							formatoptions:{ 
 
-		,
+								keys:true,
 
-		selectable: true,
+								
 
-		selectHelper: true,
+								delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback},
 
-		select: function(start, end, allDay) {
+								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
 
-			
-
-			bootbox.prompt("New Event Title:", function(title) {
-
-				if (title !== null) {
-
-					calendar.fullCalendar('renderEvent',
-
-						{
-
-							title: title,
-
-							start: start,
-
-							end: end,
-
-							allDay: allDay
+							}
 
 						},
 
-						true // make the event "stick"
+						{name:'id',index:'id', width:40, sorttype:"int", editable: true},
 
-					);
+//						{name:'sdate',index:'sdate',width:90, editable:true, sorttype:"date",unformat: pickDate},
+
+						{name:'name',index:'name', width:150,editable: true,editoptions:{size:"20",maxlength:"30"}},
+
+						{name:'stock',index:'stock', width:70, editable: true,edittype:"checkbox",editoptions: {value:"Yes:No"},unformat: aceSwitch},
+
+						{name:'ship',index:'ship', width:90, editable: true,edittype:"select",editoptions:{value:"FE:FedEx;IN:InTime;TN:TNT;AR:ARAMEX"}},
+
+						{name:'note',index:'note', width:120, sortable:false,editable: true,edittype:"textarea", editoptions:{rows:"2",cols:"10"}} 
+
+					], 
+
+			
+
+					viewrecords : true,
+
+					rowNum:10,
+
+					rowList:[10,20,30],
+
+					pager : pager_selector,
+
+					altRows: true,
+
+					//toppager: true,
+
+					
+
+					multiselect: true,
+
+					//multikey: "ctrlKey",
+
+			        multiboxonly: true,
+
+			
+
+					loadComplete : function() {
+
+						var table = this;
+
+						setTimeout(function(){
+
+							styleCheckbox(table);
+
+							
+
+							updateActionIcons(table);
+
+							updatePagerIcons(table);
+
+							enableTooltips(table);
+
+						}, 0);
+
+					},
+
+			
+
+					editurl: $path_base+"/dummy.html",//nothing is saved
+
+					caption: "权限信息一览",
+
+			
+
+			
+
+					autowidth: true
+
+			
+
+				});
+
+			
+
+				//enable search/filter toolbar
+
+				//jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+
+			
+
+				//switch element when editing inline
+
+				function aceSwitch( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=checkbox]')
+
+								.wrap('<label class="inline" />')
+
+							.addClass('ace ace-switch ace-switch-5')
+
+							.after('<span class="lbl"></span>');
+
+					}, 0);
 
 				}
 
-			});
+				//enable datepicker
+
+				function pickDate( cellvalue, options, cell ) {
+
+					setTimeout(function(){
+
+						$(cell) .find('input[type=text]')
+
+								.datepicker({format:'yyyy-mm-dd' , autoclose:true}); 
+
+					}, 0);
+
+				}
 
 			
 
-
-
-			calendar.fullCalendar('unselect');
-
 			
 
-		}
+				//navButtons
 
-		,
+				jQuery(grid_selector).jqGrid('navGrid',pager_selector,
 
-		eventClick: function(calEvent, jsEvent, view) {
+					{ 	//navbar options
 
+						edit: true,
 
+						editicon : 'icon-pencil blue',
 
-			var form = $("<form class='form-inline'><label>Change event name &nbsp;</label></form>");
+						add: true,
 
-			form.append("<input class='middle' autocomplete=off type=text value='" + calEvent.title + "' /> ");
+						addicon : 'icon-plus-sign purple',
 
-			form.append("<button type='submit' class='btn btn-sm btn-success'><i class='icon-ok'></i> Save</button>");
+						del: true,
 
-			
+						delicon : 'icon-trash red',
 
-			var div = bootbox.dialog({
+						search: true,
 
-				message: form,
+						searchicon : 'icon-search orange',
 
-			
+						refresh: true,
 
-				buttons: {
+						refreshicon : 'icon-refresh green',
 
-					"delete" : {
+						view: true,
 
-						"label" : "<i class='icon-trash'></i> Delete Event",
+						viewicon : 'icon-zoom-in grey',
 
-						"className" : "btn-sm btn-danger",
+					},
 
-						"callback": function() {
+					{
 
-							calendar.fullCalendar('removeEvents' , function(ev){
+						//edit record form
 
-								return (ev._id == calEvent._id);
+						//closeAfterEdit: true,
 
-							})
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
 
 						}
 
-					} ,
+					},
 
-					"close" : {
+					{
 
-						"label" : "<i class='icon-remove'></i> Close",
+						//new record form
 
-						"className" : "btn-sm"
+						closeAfterAdd: true,
 
-					} 
+						recreateForm: true,
+
+						viewPagerButtons: false,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_edit_form(form);
+
+						}
+
+					},
+
+					{
+
+						//delete record form
+
+						recreateForm: true,
+
+						beforeShowForm : function(e) {
+
+							var form = $(e[0]);
+
+							if(form.data('styled')) return false;
+
+							
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+							style_delete_form(form);
+
+							
+
+							form.data('styled', true);
+
+						},
+
+						onClick : function(e) {
+
+							alert(1);
+
+						}
+
+					},
+
+					{
+
+						//search form
+
+						recreateForm: true,
+
+						afterShowSearch: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+							style_search_form(form);
+
+						},
+
+						afterRedraw: function(){
+
+							style_search_filters($(this));
+
+						}
+
+						,
+
+						multipleSearch: true,
+
+						/**
+
+						multipleGroup:true,
+
+						showQuery: true
+
+						*/
+
+					},
+
+					{
+
+						//view record form
+
+						recreateForm: true,
+
+						beforeShowForm: function(e){
+
+							var form = $(e[0]);
+
+							form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+
+						}
+
+					}
+
+				)
+
+			
+
+			
+
+				
+
+				function style_edit_form(form) {
+
+					//enable datepicker on "sdate" field and switches for "stock" field
+
+					form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+
+						.end().find('input[name=stock]')
+
+							  .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+			
+
+					//update buttons classes
+
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+					
+
+					buttons = form.next().find('.navButton a');
+
+					buttons.find('.ui-icon').remove();
+
+					buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+
+					buttons.eq(1).append('<i class="icon-chevron-right"></i>');		
 
 				}
 
+			
 
+				function style_delete_form(form) {
 
-			});
+					var buttons = form.next().find('.EditButton .fm-button');
+
+					buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+
+					buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+
+					buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+				}
+
+				
+
+				function style_search_filters(form) {
+
+					form.find('.delete-rule').val('X');
+
+					form.find('.add-rule').addClass('btn btn-xs btn-primary');
+
+					form.find('.add-group').addClass('btn btn-xs btn-success');
+
+					form.find('.delete-group').addClass('btn btn-xs btn-danger');
+
+				}
+
+				function style_search_form(form) {
+
+					var dialog = form.closest('.ui-jqdialog');
+
+					var buttons = dialog.find('.EditTable')
+
+					buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+
+					buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+
+					buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+
+				}
+
+				
+
+				function beforeDeleteCallback(e) {
+
+					var form = $(e[0]);
+
+					if(form.data('styled')) return false;
+
+					
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_delete_form(form);
+
+					
+
+					form.data('styled', true);
+
+				}
+
+				
+
+				function beforeEditCallback(e) {
+
+					var form = $(e[0]);
+
+					form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+
+					style_edit_form(form);
+
+				}
 
 			
 
-			form.on('submit', function(){
-
-				calEvent.title = form.find("input[type=text]").val();
-
-				calendar.fullCalendar('updateEvent', calEvent);
-
-				div.modal("hide");
-
-				return false;
-
-			});
+			
 
 			
 
-		
+				//it causes some flicker when reloading or navigating grid
 
-			//console.log(calEvent.id);
+				//it may be possible to have some custom formatter to do this as the grid is being created to prevent this
 
-			//console.log(jsEvent);
+				//or go back to default browser checkbox styles for the grid
 
-			//console.log(view);
+				function styleCheckbox(table) {
 
+				/**
 
+					$(table).find('input:checkbox').addClass('ace')
 
-			// change the border color just for fun
+					.wrap('<label />')
 
-			//$(this).css('border-color', 'red');
+					.after('<span class="lbl align-top" />')
 
+			
 
+			
 
-		}
+					$('.ui-jqgrid-labels th[id*="_cb"]:first-child')
 
-		
+					.find('input.cbox[type=checkbox]').addClass('ace')
 
-	});
+					.wrap('<label />').after('<span class="lbl align-top" />');
 
+				*/
 
+				}
 
+				
 
+			
 
-})
+				//unlike navButtons icons, action icons in rows seem to be hard-coded
+
+				//you can change them like this in here if you want
+
+				function updateActionIcons(table) {
+
+					/**
+
+					var replacement = 
+
+					{
+
+						'ui-icon-pencil' : 'icon-pencil blue',
+
+						'ui-icon-trash' : 'icon-trash red',
+
+						'ui-icon-disk' : 'icon-ok green',
+
+						'ui-icon-cancel' : 'icon-remove red'
+
+					};
+
+					$(table).find('.ui-pg-div span.ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+					*/
+
+				}
+
+				
+
+				//replace icons with FontAwesome icons like above
+
+				function updatePagerIcons(table) {
+
+					var replacement = 
+
+					{
+
+						'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+
+						'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+
+						'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+
+						'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+
+					};
+
+					$('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+
+						var icon = $(this);
+
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+						
+
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+
+					})
+
+				}
+
+			
+
+				function enableTooltips(table) {
+
+					$('.navtable .ui-pg-button').tooltip({container:'body'});
+
+					$(table).find('.ui-pg-div').tooltip({container:'body'});
+
+				}
+
+			
+
+				//var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+
+			
+
+			
+
+			});
 
 		</script>
 
